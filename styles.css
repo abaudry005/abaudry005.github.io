@@ -66,6 +66,7 @@ html{scroll-behavior:smooth}
     }
     .right{
         justify-content: center;
+        display: block;
     }
   }
 
