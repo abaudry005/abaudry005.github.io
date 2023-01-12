@@ -9,10 +9,6 @@ html{scroll-behavior:smooth}
     position: fixed;
     width: 100%;
   }
-  .right{
-    float: right;
-    display: flex;
-  }
   /* Style the links inside the navigation bar */
   .topnav a {
     display: block;
@@ -21,6 +17,8 @@ html{scroll-behavior:smooth}
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+  .option{
     float: right;
   }
   
