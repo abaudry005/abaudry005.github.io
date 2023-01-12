@@ -9,10 +9,11 @@ html{scroll-behavior:smooth}
     position: fixed;
     width: 100%;
   }
-  
+  .left{
+    float: left;
+  }
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
