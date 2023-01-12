@@ -64,10 +64,6 @@ html{scroll-behavior:smooth}
       display: block;
       text-align: left;
     }
-    .right{
-        justify-content: center;
-        display: none;
-    }
   }
 
 /*--------------*/
