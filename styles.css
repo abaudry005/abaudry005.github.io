@@ -64,6 +64,9 @@ html{scroll-behavior:smooth}
       display: block;
       text-align: left;
     }
+    .right{
+        display: block;
+      }
   }
 
 /*--------------*/
