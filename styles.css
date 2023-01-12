@@ -9,6 +9,10 @@ html{scroll-behavior:smooth}
     position: fixed;
     width: 100%;
   }
+  .right{
+    float: right;
+    display: flex;
+  }
   /* Style the links inside the navigation bar */
   .topnav a {
     display: block;
@@ -59,6 +63,9 @@ html{scroll-behavior:smooth}
       float: none;
       display: block;
       text-align: left;
+    }
+    .right{
+        justify-content: center;
     }
   }
 
