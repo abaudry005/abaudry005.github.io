@@ -70,6 +70,8 @@ body {
 
 .intro-container{
     background-color: grey;
+    width: 80%;
+    height: 300px;
 }
 
 .text{
