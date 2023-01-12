@@ -8,6 +8,7 @@ html{scroll-behavior:smooth}
     overflow: hidden;
     position: fixed;
     width: 100%;
+    display: flex;
   }
   
   /* Style the links inside the navigation bar */
