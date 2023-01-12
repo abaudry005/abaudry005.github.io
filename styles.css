@@ -74,7 +74,7 @@ body {
 .intro-container{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .intro-sub-container{
