@@ -69,6 +69,11 @@ body {
 }
 
 .intro-container{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-sub-container{
     background-color: grey;
     width: 80%;
     height: 300px;
