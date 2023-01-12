@@ -24,9 +24,9 @@ html{scroll-behavior:smooth}
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: black;
     text-decoration: none;
-    color: black;
+    color: grey;
   }
   
   /* Add an active class to highlight the current page */
