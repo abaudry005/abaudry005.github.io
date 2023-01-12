@@ -77,8 +77,9 @@ body {
     background-color: grey;
     width: 80%;
     height: 300px;
+    border-radius: 20px;
 }
 
-.text{
+.skills{
     font-size: 1000px;
 }
