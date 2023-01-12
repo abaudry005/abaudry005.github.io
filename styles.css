@@ -10,7 +10,8 @@ html{scroll-behavior:smooth}
     width: 100%;
   }
   .left{
-    float: left;
+    float: right;
+    display: flex;
   }
   /* Style the links inside the navigation bar */
   .topnav a {
