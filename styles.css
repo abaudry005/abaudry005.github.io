@@ -6,6 +6,7 @@ html{scroll-behavior:smooth}
 .topnav {
     background-color: Black;
     overflow: hidden;
+    position: absolute;
   }
   
   /* Style the links inside the navigation bar */
