@@ -28,7 +28,7 @@ html{scroll-behavior:smooth}
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: black;
     color: white;
   }
   
