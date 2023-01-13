@@ -123,19 +123,11 @@ body {
     transform: scale(1) !important;
   }
 
-.contact{
-    color: white;
-}
-.contact:hover{
-    background-color: black;
-    color: black !important;
-    border-radius: 30px;
-    border: white solid;
-    border-width: 2px;
-    transform: scale(1) !important;
+a:not([href]){
+    color: white !important;
 }
 
-a:not([href]){
+a:not([href]):hover{
     color: black !important;
 }
 
