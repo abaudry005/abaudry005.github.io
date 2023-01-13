@@ -9,5 +9,10 @@ function myFunction() {
   }
 
 function myFunctionContact() {
-    document.getElementById("contact-hide").style.display = "block";
+    if(document.getElementById("contact-hide").style.display = "none"){
+        document.getElementById("contact-hide").style.display = "block";
+    }
+    else{
+        document.getElementById("contact-hide").style.display = "none";
+    }
 }
