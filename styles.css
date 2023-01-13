@@ -256,6 +256,7 @@ a:not([href]):hover{
 /*---Projects----*/
 
 .project-container{
+    padding-top: 20px;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     margin-top: 20px;
     height: 500px;
@@ -264,13 +265,16 @@ a:not([href]):hover{
 
 .project{
     background: black;
-    height: 500px;
     border-radius: 30px;
     overflow: hidden;
     max-width: 500px;
     display: flex;
     margin: 50px;
     margin-top: 30px;
+}
+.img-project{
+    margin-right: 20px;
+    height: auto;
 }
 
 .title{
