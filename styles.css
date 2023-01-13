@@ -105,8 +105,8 @@ body {
     margin-top: 20px;
 }
 
-.bouttons a{
-    background-color: black;
+.bouttons .download a{
+    background-color: transparent;
     color: white;
     border-radius: 30px;
     padding: 15px;
@@ -115,12 +115,11 @@ body {
     margin-right: 1%;
 }
 
-.bouttons a:hover {
+.bouttons .download a:hover {
     background-color: white;
     text-decoration: none;
     color: black;
     border: black solid;
-    padding: 15px;
   }
 
 a:not([href]){
