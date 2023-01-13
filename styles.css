@@ -109,7 +109,7 @@ body {
     background-color: transparent;
     color: white;
     border-radius: 30px;
-    padding: 14px;
+    padding: 15px;
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
@@ -120,13 +120,14 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
+    padding: 15px;
 }
 
 .contact{
     background-color: black;
     color: white;
     border-radius: 30px;
-    padding: 14px;
+    padding: 15px;
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
@@ -137,6 +138,7 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
+    padding: 15px;
 }
 
 a:not([href]){
