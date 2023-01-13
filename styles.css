@@ -264,17 +264,19 @@ a:not([href]):hover{
 
 .project{
     background: black;
-    margin:30px;
     height: 500px;
     border-radius: 30px;
     overflow: hidden;
+    max-width: 500px;
     display: flex;
+    margin: 50px;
+    margin-top: 30px;
 }
 
 .title{
     font-size: 30px;
     padding-top: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
@@ -282,7 +284,7 @@ a:not([href]):hover{
 .description-text{
     font-size: 20px;
     padding-top: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
