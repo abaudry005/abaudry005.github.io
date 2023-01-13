@@ -258,8 +258,9 @@ a:not([href]):hover{
 .project-container{
     padding-top: 30px;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 20px;
+    padding-bottom: 30px;
 }
 
 .project{
