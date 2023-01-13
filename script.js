@@ -12,7 +12,7 @@ function myFunctionContact() {
     if(document.getElementById("contact-hide").style.display = "none"){
         document.getElementById("contact-hide").style.display = "block";
     }
-    if(document.getElementById("contact-hide").style.display = "block"){
+    else if(document.getElementById("contact-hide").style.display = "block"){
         document.getElementById("contact-hide").style.display = "none";
     }
 }
