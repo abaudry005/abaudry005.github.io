@@ -223,7 +223,7 @@ a:not([href]):hover{
   }
 
   .card-img{
-    height: 70%;
+    height: 100px;
   }
   
   /* Style the back side */
