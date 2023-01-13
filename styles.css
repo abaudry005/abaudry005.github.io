@@ -223,7 +223,9 @@ a:not([href]):hover{
   }
 
   .card-img{
-    height: 100px;
+    margin-top: 20px;
+    max-width: 100px;
+    height: auto;
   }
   
   /* Style the back side */
