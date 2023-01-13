@@ -215,7 +215,7 @@ a:not([href]):hover{
     border-radius: 30px;
   }
 
-  .card-title{
+  .card-title_{
     color: white;
     font-size: 30px;
     font-weight: bold;
