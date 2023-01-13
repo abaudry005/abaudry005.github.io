@@ -103,6 +103,7 @@ body {
     display: flex;
     margin-left: 5%;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .download{
@@ -120,7 +121,6 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
-    padding: 15px;
 }
 
 .contact{
