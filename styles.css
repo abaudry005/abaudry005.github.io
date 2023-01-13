@@ -126,14 +126,13 @@ body {
 .contact{
     color: white;
 }
-.contact a:hover{
+.contact:hover{
     background-color: black;
     color: black;
     border-radius: 30px;
     border: white solid;
     border-width: 2px;
     transform: scale(1) !important;
-    content: "+33 615236964" !important;
 }
 
 a:not([href]){
