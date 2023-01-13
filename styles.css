@@ -235,8 +235,8 @@ a:not([href]):hover{
   }
 
   .card-img-back{
-    margin: 20px;
-    max-width: 40px;
+    margin: 10px;
+    max-width: 70px;
     height: auto;
   }
   
