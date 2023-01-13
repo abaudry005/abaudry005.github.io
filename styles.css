@@ -80,6 +80,7 @@ body {
     background-color: grey;
     width: 80%;
     border-radius: 20px;
+    padding-bottom: 30px;
 }
 
 .nom{
@@ -90,8 +91,9 @@ body {
 }
 
 .description{
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 5%;
+    margin-right: 5%;
     margin-top: 2%;
 }
 
