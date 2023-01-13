@@ -83,6 +83,19 @@ body {
     border-radius: 20px;
 }
 
+.nom{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.description{
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
 .skills{
     font-size: 1000px;
 }
