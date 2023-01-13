@@ -116,7 +116,10 @@ body {
     margin-right: 1%;
 }
 
-
+.download:hover{
+    background-color: black;
+    color:white;
+}
 
 .contact{
     background-color: black;
