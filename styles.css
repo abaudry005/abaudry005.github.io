@@ -268,5 +268,6 @@ a:not([href]):hover{
     height: 500px;
     border-radius: 30px;
     overflow: hidden;
+    display: flex;
 }
 /*---------------*/
