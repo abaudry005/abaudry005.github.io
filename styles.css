@@ -131,6 +131,17 @@ a:not([href]):hover{
     color: black !important;
 }
 
+.contact-hide{
+    display: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    border: white solid;
+    border-width: 2px;
+    margin-right: 1%;
+}
+
 /*----Skils----*/
 
 .skills{

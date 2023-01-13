@@ -7,3 +7,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+function myFunctionContact() {
+    document.getElementById("contact-hide").style.display = "block";
+}
