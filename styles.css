@@ -119,6 +119,7 @@ body {
 .download:hover{
     background-color: black;
     color:white;
+    text-decoration: none;
 }
 
 .contact{
