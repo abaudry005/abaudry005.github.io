@@ -132,7 +132,11 @@ body {
     margin-right: 1%;
 }
 
-
+.contact:hover{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+}
 
 a:not([href]){
     color: white !important;
