@@ -120,7 +120,24 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
-  }
+}
+
+.contact{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    border: white solid;
+    border-width: 2px;
+    margin-right: 1%;
+}
+
+.contact:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: black solid;
+}
 
 a:not([href]){
     color: white !important;
