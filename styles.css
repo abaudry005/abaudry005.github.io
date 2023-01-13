@@ -133,6 +133,7 @@ body {
     border: white solid;
     border-width: 2px;
     transform: scale(1);
+    content: "+33 615236964" !important;
 }
 
 .skills{
