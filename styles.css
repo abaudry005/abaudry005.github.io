@@ -8,6 +8,7 @@ html{scroll-behavior:smooth}
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
@@ -261,5 +262,11 @@ a:not([href]):hover{
     border-radius: 20px;
 }
 
-
+.poroject{
+    background: black;
+    margin:30px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
 /*---------------*/
