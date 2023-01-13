@@ -78,7 +78,7 @@ body {
 }
 
 .intro-sub-container{
-    background-color: grey;
+    background: linear-gradient(45deg, orange, blue);;
     width: 80%;
     border-radius: 20px;
     padding-bottom: 30px;
@@ -101,8 +101,8 @@ body {
 
 .skills{
     font-size: 50px;
-    padding-top: 70px;
-    color: white;
+    padding-top: 40px;
+    color: lightgrey;
     font-weight: bold;
     text-align: center;
 }
