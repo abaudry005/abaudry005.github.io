@@ -270,4 +270,20 @@ a:not([href]):hover{
     overflow: hidden;
     display: flex;
 }
+
+.title{
+    font-size: 30px;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-text{
+    font-size: 20px;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
 /*---------------*/
