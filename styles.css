@@ -99,6 +99,23 @@ body {
     margin-right: 5%;
 }
 
+.bouttons a{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    border: white solid;
+    border-width: 2px;
+}
+
+.bouttons a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    transform: scale(1.1);
+    border: black solid;
+  }
+
 .skills{
     font-size: 50px;
     padding-top: 40px;
