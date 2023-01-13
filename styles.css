@@ -222,12 +222,6 @@ a:not([href]):hover{
     margin-top: 10px;
   }
 
-  .card-title_2{
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
   .card-img{
     margin-top: 20px;
     max-width: 100px;
