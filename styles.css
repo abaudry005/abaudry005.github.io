@@ -136,6 +136,10 @@ body {
     content: "+33 615236964" !important;
 }
 
+a:not([href]){
+    color: white !important;
+}
+
 .skills{
     font-size: 50px;
     padding-top: 40px;
