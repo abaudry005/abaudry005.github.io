@@ -256,10 +256,9 @@ a:not([href]):hover{
 /*---Projects----*/
 
 .project-container{
-    padding-top: 20px;
+    padding-top: 30px;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     margin-top: 20px;
-    height: 500px;
     border-radius: 20px;
 }
 
@@ -267,7 +266,6 @@ a:not([href]):hover{
     background: black;
     border-radius: 30px;
     overflow: hidden;
-    max-width: 500px;
     display: flex;
     margin: 50px;
     margin-top: 30px;
@@ -279,10 +277,10 @@ a:not([href]):hover{
 
 .title{
     font-size: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     color: white;
     font-weight: bold;
-    text-align: center;
+    padding-right: 20px;
 }
 
 .description-text{
