@@ -161,7 +161,7 @@ a:not([href]):hover{
 
 .skills{
     font-size: 50px;
-    padding-top: 40px;
+    padding-top: 30px;
     color: lightgrey;
     font-weight: bold;
     text-align: center;
@@ -210,15 +210,16 @@ a:not([href]):hover{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #cb73ff;
     color: black;
     border-radius: 30px;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: rgb(255, 179, 70);
     color: white;
+    border-radius: 30px;
     transform: rotateY(180deg);
   }
 
