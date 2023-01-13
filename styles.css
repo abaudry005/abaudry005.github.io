@@ -98,5 +98,7 @@ body {
 }
 
 .skills{
-    font-size: 1000px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
 }
