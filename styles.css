@@ -221,6 +221,10 @@ a:not([href]):hover{
     font-weight: bold;
     margin-top: 10px;
   }
+
+  .card-img{
+    height: 80%;
+  }
   
   /* Style the back side */
   .flip-card-back {
