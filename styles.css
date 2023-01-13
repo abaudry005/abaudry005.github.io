@@ -120,17 +120,19 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
+    transform: scale(1);
   }
 
 .contact{
     color: black;
 }
-.contact:hover{
+.contact a:hover{
     background-color: black;
     color: white;
     border-radius: 30px;
     border: white solid;
     border-width: 2px;
+    transform: scale(1);
 }
 
 .skills{
