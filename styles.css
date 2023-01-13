@@ -241,6 +241,14 @@ a:not([href]):hover{
     border-radius: 30px;
     transform: rotateY(180deg);
   }
-
-
 /*-------------*/
+
+/*---Projects----*/
+
+.project-container{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    height: 500px;
+}
+
+
+/*---------------*/
