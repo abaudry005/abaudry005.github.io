@@ -122,11 +122,13 @@ body {
     border: black solid;
   }
 
+.contact{
+    color: black;
+}
 .contact:hover{
     background-color: black;
     color: white;
     border-radius: 30px;
-    padding: 15px;
     border: white solid;
     border-width: 2px;
 }
