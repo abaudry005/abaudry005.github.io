@@ -116,12 +116,7 @@ body {
     margin-right: 1%;
 }
 
-.download:hover {
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border: black solid;
-}
+
 
 .contact{
     background-color: black;
@@ -133,13 +128,7 @@ body {
     margin-right: 1%;
 }
 
-.contact:hover {
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border: black solid;
-    padding: 15px;
-}
+
 
 a:not([href]){
     color: white !important;
