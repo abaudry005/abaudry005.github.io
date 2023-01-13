@@ -136,7 +136,7 @@ body {
 }
 
 a:not([href]){
-    color: white !important;
+    color: black !important;
 }
 
 /*----Skils----*/
