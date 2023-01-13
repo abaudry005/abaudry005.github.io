@@ -223,7 +223,7 @@ a:not([href]):hover{
   }
 
   .card-title_2{
-    color: white;
+    color: black;
     font-size: 30px;
     font-weight: bold;
   }
