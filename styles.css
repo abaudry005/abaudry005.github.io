@@ -276,6 +276,10 @@ a:not([href]):hover{
     height: auto;
 }
 
+.text-container{
+    margin: 10px;
+}
+
 .title{
     font-size: 30px;
     padding-top: 20px;
