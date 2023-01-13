@@ -128,7 +128,7 @@ body {
 }
 .contact:hover{
     background-color: black;
-    color: black;
+    color: black !important;
     border-radius: 30px;
     border: white solid;
     border-width: 2px;
