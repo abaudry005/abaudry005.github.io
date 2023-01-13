@@ -120,7 +120,7 @@ body {
     text-decoration: none;
     color: black;
     border: black solid;
-    transform: scale(1);
+    transform: scale(1) !important;
   }
 
 .contact{
@@ -132,7 +132,7 @@ body {
     border-radius: 30px;
     border: white solid;
     border-width: 2px;
-    transform: scale(1);
+    transform: scale(1) !important;
     content: "+33 615236964" !important;
 }
 
