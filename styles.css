@@ -99,6 +99,11 @@ body {
     margin-right: 5%;
 }
 
+.bouttons{
+    display: flex;
+    margin: 10px;
+}
+
 .bouttons a{
     background-color: black;
     color: white;
