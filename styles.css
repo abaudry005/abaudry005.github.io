@@ -105,7 +105,7 @@ body {
     margin-top: 20px;
 }
 
-.bouttons .download a{
+.download a{
     background-color: transparent;
     color: white;
     border-radius: 30px;
@@ -115,7 +115,7 @@ body {
     margin-right: 1%;
 }
 
-.bouttons .download a:hover {
+.download a:hover {
     background-color: white;
     text-decoration: none;
     color: black;
