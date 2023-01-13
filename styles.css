@@ -233,6 +233,15 @@ a:not([href]):hover{
     max-width: 72px;
     height: auto;
   }
+
+  .card-img-back-2{
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: 70px;
+    height: auto;
+  }
+
   
   /* Style the back side */
   .flip-card-back {
