@@ -288,6 +288,15 @@ a:not([href]):hover{
     padding-right: 20px;
 }
 
+.title-logo{
+    display: flex;
+}
+
+.img-title{
+    justify-content: end;
+    max-height: 70px;
+}
+
 .description-text{
     font-size: 20px;
     padding-top: 30px;
