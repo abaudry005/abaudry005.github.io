@@ -441,3 +441,9 @@ a:not([href]):hover{
   }
 
 /*---------------------*/
+
+/*-------contact--------*/
+
+.bordure {
+    border-bottom:1px solid white;
+    }
