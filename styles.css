@@ -314,7 +314,6 @@ a:not([href]):hover{
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
 }
-
 @keyframes anim {
     0% {
         background-position: 0 50%;
