@@ -401,6 +401,11 @@ a:not([href]):hover{
     height: auto;
   }
 
+  .img-project-exp {
+    margin-right: 20px;
+    max-width: 400px;
+    }
+
   .card-img-back-exp{
     margin-top: 10px;
     max-width: 72px;
