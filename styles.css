@@ -376,7 +376,7 @@ a:not([href]):hover{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front-exp {
-    background-color: #cb73ff;
+    background-color: #7a9aff;
     color: black;
     border-radius: 30px;
   }
