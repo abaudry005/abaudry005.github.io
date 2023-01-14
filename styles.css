@@ -293,8 +293,8 @@ a:not([href]):hover{
 }
 
 .img-title{
-    justify-content: end;
-    max-height: 70px;
+    max-height: 50px;
+    margin-top: 20px;
 }
 
 .description-text{
@@ -302,5 +302,6 @@ a:not([href]):hover{
     padding-top: 30px;
     color: white;
     font-weight: bold;
+    margin-right: 10px;
 }
 /*---------------*/
