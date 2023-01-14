@@ -273,7 +273,7 @@ a:not([href]):hover{
 }
 .img-project{
     margin-right: 20px;
-    height: auto;
+    max-height: 200px;
 }
 
 .text-container{
