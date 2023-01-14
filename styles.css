@@ -381,7 +381,7 @@ a:not([href]):hover{
     border-radius: 30px;
   }
 
-  .card-title_exp{
+  .card-title-exp{
     color: black;
     font-size: 30px;
     font-weight: bold;
