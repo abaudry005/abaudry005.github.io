@@ -381,6 +381,13 @@ a:not([href]):hover{
     border-radius: 30px;
   }
 
+  .project-exp{
+    background: black;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+  }
+
   .card-title-exp{
     color: black;
     font-size: 30px;
