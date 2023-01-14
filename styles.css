@@ -449,16 +449,20 @@ a:not([href]):hover{
     }
 
 .contact-container{
-    display:flex;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .phone{
-    margin: 30px
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 400px;
 }
 
 .mail{
-    margin: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 400px;
 }
 
 .img-contact{
