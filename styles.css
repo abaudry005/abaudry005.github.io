@@ -465,6 +465,11 @@ a:not([href]):hover{
     margin-left: 400px;
 }
 
+.img-contact-container{
+    display: flex;
+    justify-content: center;
+}
+
 .img-contact{
     max-width: 50px;
     height: auto;
