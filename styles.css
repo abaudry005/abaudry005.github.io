@@ -447,3 +447,28 @@ a:not([href]):hover{
 .bordure {
     border-bottom:1px solid white;
     }
+
+.contact-container{
+    display:flex;
+    align-items: center;
+}
+
+.phone{
+    margin: 30px
+}
+
+.mail{
+    margin: 30px;
+}
+
+.img-contact{
+    max-width: 50px;
+    height: auto;
+}
+
+.phone-num{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
