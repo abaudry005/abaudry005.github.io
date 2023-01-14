@@ -344,7 +344,7 @@ a:not([href]):hover{
 .flip-card-exp{
     background-color: transparent;
     width: 800px;
-    height: 23px;
+    height: 230px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin-left: 2%;
     margin-right: 2%;
