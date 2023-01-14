@@ -423,7 +423,7 @@ a:not([href]):hover{
   
   /* Style the back side */
   .flip-card-back-exp {
-    background-color: rgb(255, 179, 70);
+    background-color: transparent;
     color: white;
     border-radius: 30px;
     transform: rotateY(180deg);
