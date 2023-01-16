@@ -457,13 +457,11 @@ a:not([href]):hover{
 .phone{
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-right: 320px;
 }
 
 .mail{
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 320px;
 }
 
 .img-contact-container{
