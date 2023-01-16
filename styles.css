@@ -451,17 +451,19 @@ a:not([href]):hover{
 
 .contact-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .phone{
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 15%;
 }
 
 .mail{
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 15%;
 }
 
 .img-contact-container{
