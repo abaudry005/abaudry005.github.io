@@ -450,7 +450,7 @@ a:not([href]):hover{
 
 .contact-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .phone{
