@@ -457,7 +457,7 @@ a:not([href]):hover{
 .phone{
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .mail{
