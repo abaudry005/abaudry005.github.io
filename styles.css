@@ -446,20 +446,28 @@ a:not([href]):hover{
 .playlist{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .hobbies{
     display: block;
+    max-width: 50%;
+    padding-right: 60px;
 }
 
 .hobbies-title{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 
 .hobbies-text{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 /*-------contact--------*/
