@@ -443,6 +443,25 @@ a:not([href]):hover{
 
 /*---------------------*/
 
+.playlist{
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies{
+    display: block;
+}
+
+.hobbies-title{
+    color: white;
+    font-size: 20px;
+}
+
+.hobbies-text{
+    color: white;
+    font-size: 17px;
+}
+
 /*-------contact--------*/
 
 .bordure {
