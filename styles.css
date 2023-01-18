@@ -318,7 +318,7 @@ a:not([href]):hover{
     padding-top: 30px;
     padding-bottom: 30px;
     /* --- */
-    background: linear-gradient(90deg, #7EFFB2, #2CD9FF);
+    background: linear-gradient(to right, #ffd256, #ff5459);
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
     display: flex;
@@ -457,17 +457,21 @@ a:not([href]):hover{
 
 .hobbies-title{
     color: white;
-    font-size: 25px;
+    font-size: 29px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10%;
 }
 
 .hobbies-text{
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10%;
     padding-top: 10px;
+}
+
+.play-padding{
+    padding-right: 10%;
 }
 
 /*-------contact--------*/
