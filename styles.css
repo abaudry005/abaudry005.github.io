@@ -320,12 +320,14 @@ a:not([href]):hover{
     text-align: center;
     font-size: 20px;
     color: white;
+    transition: 1s;
 }
 
 .git-btn:hover{
     background: linear-gradient(180deg, #33d5cd 0%, #5243d7 100%);
     color: black;
     text-decoration: none;
+    transition: 1s;
 }
 /*---------------*/
 
