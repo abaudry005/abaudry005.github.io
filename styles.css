@@ -98,12 +98,12 @@ body {
 }
 
 .linkedin{
-    justify-content: end;
     display: flex;
     margin-top: 2%;
     margin-left: 35%;
     background: black;
     border-radius: 100px;
+    overflow: hidden !important;
 }
 
 .linkedin-img{
@@ -115,6 +115,7 @@ body {
 .linkedin-text{
     font-size: 15px;
     color: white;
+    font-weight: bold;
 }
 
 .linkedin:hover{
