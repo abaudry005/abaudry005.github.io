@@ -85,6 +85,10 @@ body {
     padding-bottom: 30px;
 }
 
+.top{
+    display: flex;
+}
+
 .nom{
     font-size: 50px;
     color: black;
