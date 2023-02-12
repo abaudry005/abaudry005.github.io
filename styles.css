@@ -318,9 +318,6 @@ a:not([href]):hover{
     border-radius: 50px;
     margin-top: -10px;
     text-align: center;
-}
-
-.git-text{
     font-size: 20px;
     color: white;
     text-decoration: none;
