@@ -99,13 +99,14 @@ body {
 
 .linkedin{
     display: flex;
-    margin-top: 2%;
+    margin-top: 2.5%;
     margin-left: 5%;
     background: black;
     border-radius: 100px;
     overflow: hidden !important;
     border: white solid;
     border-width: 1px;
+    height: 100%;
 }
 
 .linkedin-img{
