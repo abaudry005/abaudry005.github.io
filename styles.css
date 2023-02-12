@@ -111,7 +111,7 @@ body {
 .linkedin-img{
     border-radius: 100px;
     max-width: 60px;
-    height: 60px;
+    height: 100%;
 }
 
 .linkedin-text{
