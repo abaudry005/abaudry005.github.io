@@ -308,10 +308,14 @@ a:not([href]):hover{
 }
 
 .git-container{
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.git-btn{
+    background: linear-gradient(90deg, #33d5cd 0%, #5243d7 100%);
     padding: 15px;
     border-radius: 50px;
-    margin: 20px;
     text-align: center;
 }
 /*---------------*/
