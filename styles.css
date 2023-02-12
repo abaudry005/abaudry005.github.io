@@ -124,6 +124,15 @@ body {
     padding-right: 10px;
 }
 
+.linkedin-text:hover{
+    font-size: 15px;
+    color: #0e76a8;
+    font-weight: bold;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .linkedin:hover{
     text-decoration: none;
     background: transparent;
