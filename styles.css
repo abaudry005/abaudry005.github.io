@@ -323,6 +323,7 @@ a:not([href]):hover{
 .git-text{
     font-size: 20px;
     color: white;
+    text-decoration: none;
 }
 /*---------------*/
 
