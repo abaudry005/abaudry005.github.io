@@ -306,6 +306,14 @@ a:not([href]):hover{
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.git-container{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px;
+    text-align: center;
+}
 /*---------------*/
 
 /*-----Experience------*/
