@@ -104,7 +104,7 @@ body {
     border-radius: 100px;
     overflow: hidden !important;
     border: white solid;
-    border-width: 1px;
+    border-width: 2px;
     height: 100%;
 }
 
@@ -123,20 +123,10 @@ body {
     padding-right: 10px;
 }
 
-.linkedin-text:hover{
-    font-size: 15px;
-    color: #0e76a8;
-    font-weight: bold;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .linkedin:hover{
     text-decoration: none;
     background: transparent;
-    border: #0e76a8 solid;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .description{
