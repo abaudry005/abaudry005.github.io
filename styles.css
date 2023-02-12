@@ -316,6 +316,7 @@ a:not([href]):hover{
     background: linear-gradient(90deg, #33d5cd 0%, #5243d7 100%);
     padding: 15px;
     border-radius: 50px;
+    margin-top: -10px;
     text-align: center;
 }
 
