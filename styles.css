@@ -112,7 +112,7 @@ body {
 
 .linkedin-img{
     border-radius: 100px;
-    max-width: 60px;
+    max-width: 50px;
     height: 100%;
 }
 
@@ -120,6 +120,9 @@ body {
     font-size: 15px;
     color: white;
     font-weight: bold;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .linkedin:hover{
