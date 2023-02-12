@@ -100,10 +100,12 @@ body {
 .linkedin{
     display: flex;
     margin-top: 2%;
-    margin-left: 35%;
+    margin-left: 5%;
     background: black;
     border-radius: 100px;
     overflow: hidden !important;
+    border: white solid;
+    border-width: 1px;
 }
 
 .linkedin-img{
