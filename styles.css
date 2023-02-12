@@ -101,7 +101,7 @@ body {
     justify-content: end;
     display: flex;
     margin-top: 2%;
-    margin-left: 40%;
+    margin-left: 35%;
     background: black;
     border-radius: 100px;
 }
@@ -115,6 +115,10 @@ body {
 .linkedin-text{
     font-size: 15px;
     color: white;
+}
+
+.linkedin-text:hover{
+    text-decoration: none;
 }
 
 .description{
