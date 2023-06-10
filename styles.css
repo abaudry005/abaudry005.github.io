@@ -410,10 +410,10 @@ a:not([href]):hover{
     
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     .flip-card-exp-orbow{
       background-color: transparent;
-      height: 400px;
+      height: 500px;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
       margin-left: 15%;
       margin-right: 15%;
