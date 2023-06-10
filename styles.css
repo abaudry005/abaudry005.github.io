@@ -398,18 +398,7 @@ a:not([href]):hover{
     }
 }
 
-.cards-container {
-  position: relative;
-}
 
-.orbow-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card-exp{
@@ -419,7 +408,7 @@ a:not([href]):hover{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 50px;;
-    backface-visibility: hidden;
+    
   }
   
   /* This container is needed to position the front and back side */
