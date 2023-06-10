@@ -410,7 +410,7 @@ a:not([href]):hover{
     
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (min-width: 1000px) {
     .flip-card-exp-orbow{
       background-color: transparent;
       height: 500px;
