@@ -381,7 +381,7 @@ a:not([href]):hover{
     background: linear-gradient(to right, #ffd256, #ff5459);
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 
