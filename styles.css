@@ -408,6 +408,7 @@ a:not([href]):hover{
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 50px;;
   }
   
   /* This container is needed to position the front and back side */
