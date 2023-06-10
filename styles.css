@@ -377,12 +377,11 @@ a:not([href]):hover{
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* --- */
     background: linear-gradient(to right, #ffd256, #ff5459);
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
-    /*display: flex;*/
     justify-content: center;
+    margin-top: 10px;
 }
 
 @keyframes anim {
