@@ -422,7 +422,6 @@ a:not([href]):hover{
     }
   }
 
-  @media screen and (min-width: 700px) {
     .flip-card-exp-orbow{
       background-color: transparent;
       height: 230px;
@@ -432,7 +431,6 @@ a:not([href]):hover{
       margin-bottom: 50px;;
       
     }
-  }
   
   /* This container is needed to position the front and back side */
   .flip-card-inner-exp {
