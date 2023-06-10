@@ -402,12 +402,36 @@ a:not([href]):hover{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card-exp{
     background-color: transparent;
-    /*height: 230px;*/
+    height: 230px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 50px;;
     
+  }
+
+  @media screen and (max-width: 700px) {
+    .flip-card-exp-orbow{
+      background-color: transparent;
+      height: 400px;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 50px;;
+      
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .flip-card-exp-orbow{
+      background-color: transparent;
+      height: 230px;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 50px;;
+      
+    }
   }
   
   /* This container is needed to position the front and back side */
