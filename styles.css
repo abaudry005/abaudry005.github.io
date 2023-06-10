@@ -304,12 +304,13 @@ a:not([href]):hover{
     border-radius: 30px;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     margin: 50px;
     margin-top: 30px;
 }
 .img-project{
     margin-right: 20px;
-    max-width: 35%;
+    width: 35%;
 }
 
 .text-container{
