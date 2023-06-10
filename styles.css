@@ -311,6 +311,7 @@ a:not([href]):hover{
 .img-project{
     margin-right: 20px;
     width: 35%;
+    object-fit: cover;
 }
 
 .text-container{
