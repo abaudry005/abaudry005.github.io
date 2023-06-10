@@ -500,6 +500,30 @@ a:not([href]):hover{
     transform: rotateY(180deg);
   }
 
+  .orbow-container{
+    display: flex;
+    justify-content: center;
+}
+
+.orbow-btn{
+    background: linear-gradient(90deg, #33d5cd 0%, #5243d7 100%);
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.orbow-btn:hover{
+    background: linear-gradient(270deg, #33d5cd 0%, #5243d7 100%);
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
 /*---------------------*/
 
 .playlist{
