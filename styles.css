@@ -404,8 +404,8 @@ a:not([href]):hover{
     background-color: transparent;
     height: 230px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 50px;;
     
   }
@@ -415,8 +415,8 @@ a:not([href]):hover{
       background-color: transparent;
       height: 350px;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
-      margin-left: 15%;
-      margin-right: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
       margin-bottom: 50px;;
       
     }
@@ -427,8 +427,8 @@ a:not([href]):hover{
       background-color: transparent;
       height: 230px;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
-      margin-left: 15%;
-      margin-right: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
       margin-bottom: 50px;;
       
     }
