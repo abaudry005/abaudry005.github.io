@@ -151,6 +151,7 @@ body {
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
+    margin-top: 5px;
 }
 
 .download:hover{
