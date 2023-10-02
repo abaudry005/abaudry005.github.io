@@ -481,8 +481,8 @@ a:not([href]):hover{
   }
 
   .description-text-exp{
-    font-size: 13px;
-    padding-top: 20px;
+    font-size: 18px;
+    padding-top: 17px;
     color: white;
     font-weight: bold;
     margin-right: 10px;
