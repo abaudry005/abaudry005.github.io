@@ -529,6 +529,22 @@ a:not([href]):hover{
     justify-content: center;
 }
 
+.download-orbow{
+  background-color: transparent;
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  border: white solid;
+  border-width: 2px;
+  margin-right: 1%;
+}
+
+.download-orbow:hover{
+  background-color: white;
+  color:black;
+  text-decoration: none;
+}
+
 .orbow-btn{
     background: linear-gradient(90deg, #33d5cd 0%, #5243d7 100%);
     padding: 15px;
