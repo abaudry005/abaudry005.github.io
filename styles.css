@@ -533,7 +533,6 @@ a:not([href]):hover{
     background: linear-gradient(90deg, #33d5cd 0%, #5243d7 100%);
     padding: 15px;
     border-radius: 50px;
-    margin-top: -25px;
     margin-bottom: 25px;
     text-align: center;
     font-size: 20px;
