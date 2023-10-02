@@ -537,7 +537,6 @@ a:not([href]):hover{
   padding: 15px;
   border: white solid;
   border-width: 2px;
-  margin-right: 1%;
   margin-top: 5px;
 }
 
