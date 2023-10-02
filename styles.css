@@ -488,7 +488,7 @@ a:not([href]):hover{
     font-weight: bold;
     margin-right: 10px;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   .card-img-exp{
