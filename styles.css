@@ -375,7 +375,7 @@ a:not([href]):hover{
 .exp-container{
     width: 100%;
     border-radius: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
     background: linear-gradient(to right, #ffd256, #ff5459);
     background-size: 400% 400%;
