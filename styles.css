@@ -305,8 +305,10 @@ a:not([href]):hover{
     border-radius: 30px;
     overflow: hidden;
     display: flex;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .img-project{
     margin-right: 20px;
