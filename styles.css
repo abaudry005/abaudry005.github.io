@@ -530,6 +530,10 @@ a:not([href]):hover{
   .orbow-container{
     display: flex;
     justify-content: center;
+  }
+
+.dowload-container{
+  margin-bottom: 15px;
 }
 
 .download-orbow{
