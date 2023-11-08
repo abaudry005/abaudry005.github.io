@@ -490,7 +490,6 @@ a:not([href]):hover{
     font-weight: bold;
     margin-right: 10px;
     text-align: left;
-    padding-bottom: 30px;
   }
 
   .card-img-exp{
