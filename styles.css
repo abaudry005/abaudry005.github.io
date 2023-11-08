@@ -547,6 +547,17 @@ a:not([href]):hover{
   margin-bottom: 5px;
 }
 
+.download-eirbmon{
+  background-color: transparent;
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  border: white solid;
+  border-width: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
 .download-orbow:hover{
   background-color: white;
   color:black;
