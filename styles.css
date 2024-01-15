@@ -557,8 +557,6 @@ a:not([href]):hover{
   padding: 15px;
   border: white solid;
   border-width: 2px;
-  margin-top: 20px;
-  margin-bottom: 5px;
 }
 
 .download-orbow:hover{
