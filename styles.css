@@ -196,7 +196,6 @@ a:not([href]):hover{
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
-    display: flex;
     align-items: center;
 }
 

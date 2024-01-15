@@ -13,6 +13,6 @@ function myFunctionContact() {
         document.getElementById("contact-hide").style.display = "none";
     }
     else{
-        document.getElementById("contact-hide").style.display = "block";
+        document.getElementById("contact-hide").style.display = "flex";
     }
 }
