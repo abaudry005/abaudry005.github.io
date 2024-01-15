@@ -105,13 +105,14 @@ body {
     overflow: hidden !important;
     border: white solid;
     border-width: 2px;
+    align-items: center; /**/
     height: 100%;
 }
 
 .linkedin-img{
     border-radius: 100px;
     max-width: 50px;
-    height: 100%;
+    height: auto; /**/
 }
 
 .linkedin-text{
