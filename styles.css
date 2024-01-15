@@ -106,7 +106,6 @@ body {
     border: white solid;
     border-width: 2px;
     height: 100%;
-    margin-top: 5px;
 }
 
 .linkedin-img{
@@ -152,7 +151,8 @@ body {
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .download:hover{
@@ -169,7 +169,8 @@ body {
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .contact:hover{
@@ -195,7 +196,6 @@ a:not([href]):hover{
     border: white solid;
     border-width: 2px;
     margin-right: 1%;
-    margin-top: 5px;
 }
 
 /*----Skils----*/
