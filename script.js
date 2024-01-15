@@ -9,7 +9,7 @@ function myFunction() {
   }
 
 function myFunctionContact() {
-    if(document.getElementById("contact-hide").style.display === "block"){
+    if(document.getElementById("contact-hide").style.display === "flex"){
         document.getElementById("contact-hide").style.display = "none";
     }
     else{
