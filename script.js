@@ -17,11 +17,11 @@ function myFunctionContact() {
     }
 }
 
-function myFunctionDarkMode() {
-  if(document.getElementById("body").style.backgroundColor === "Black !important"){
-      document.getElementById("body").style.backgroundColor = "White";
+function toggleSwitch() {
+  if(document.getElementById("body").style.backgroundColor === "White"){
+      document.getElementById("body").style.backgroundColor = "Black !important";
   }
   else{
-      document.getElementById("contact-hide").style.backgroundColor = "Black !important";
+      document.getElementById("contact-hide").style.backgroundColor = "White";
   }
 }
