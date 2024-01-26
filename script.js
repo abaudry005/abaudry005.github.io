@@ -13,7 +13,7 @@ function updateContent() {
     });
 }
 
-document.getElementById('apple-switch').addEventListener('click', () => {
+document.getElementById('apple-switch').addEventListener('change', () => {
   // Bascule entre les langues (par exemple, entre 'en' et 'fr')
   currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
   updateContent();  // Met à jour le contenu lors du changement de langue
