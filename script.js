@@ -11,6 +11,7 @@ function updateContent() {
       document.getElementById('linkedin').textContent = data.linkedin;
       document.getElementById('contact').textContent = data.contact;
       document.getElementById('skills').textContent = data.skills;
+      document.getElementById('developer').textContent = data.developer;
     });
 }
 
