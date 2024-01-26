@@ -12,6 +12,7 @@ function updateContent() {
       document.getElementById('contact').textContent = data.contact;
       document.getElementById('skills').textContent = data.skills;
       document.getElementById('developer').textContent = data.developer;
+      console.log(data);
     });
 }
 
