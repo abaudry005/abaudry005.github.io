@@ -108,7 +108,7 @@ body {
 }
 
 .apple-switch:checked + label {
-  background-color: #ebd55e;
+  background-color: #e3ad5e;
 }
 
 .apple-switch:checked + label:before {
