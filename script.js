@@ -1,3 +1,24 @@
+let currentLanguage = 'en';  // Langue par défaut
+
+function updateContent() {
+  // Charge le fichier de langue correspondant à la langue actuelle
+  fetch(`lang/${currentLanguage}.json`)
+    .then(response => response.json())
+    .then(data => {
+      // Met à jour le contenu des éléments avec les nouvelles traductions
+      document.getElementById('description').textContent = data.greeting;
+    });
+}
+
+document.getElementById('apple-switch').addEventListener('click', () => {
+  // Bascule entre les langues (par exemple, entre 'en' et 'fr')
+  currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+  updateContent();  // Met à jour le contenu lors du changement de langue
+});
+
+// Charge le contenu initial au chargement de la page
+updateContent();
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -15,13 +36,4 @@ function myFunctionContact() {
     else{
         document.getElementById("contact-hide").style.display = "flex";
     }
-}
-
-function toggleSwitch() {
-  if(document.getElementById("body").style.backgroundColor === "white"){
-      document.getElementById("body").style.backgroundColor = "Black !important";
-  }
-  else{
-      document.getElementById("body").style.backgroundColor = "white";
-  }
 }
