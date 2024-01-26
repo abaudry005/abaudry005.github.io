@@ -22,6 +22,6 @@ function toggleSwitch() {
       document.getElementById("body").style.backgroundColor = "Black !important";
   }
   else{
-      document.getElementById("contact-hide").style.backgroundColor = "White";
+      document.getElementById("body").style.backgroundColor = "White";
   }
 }
