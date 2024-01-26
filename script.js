@@ -18,10 +18,10 @@ function myFunctionContact() {
 }
 
 function toggleSwitch() {
-  if(document.getElementById("body").style.backgroundColor === "White"){
+  if(document.getElementById("body").style.backgroundColor === "white"){
       document.getElementById("body").style.backgroundColor = "Black !important";
   }
   else{
-      document.getElementById("body").style.backgroundColor = "White";
+      document.getElementById("body").style.backgroundColor = "white";
   }
 }
