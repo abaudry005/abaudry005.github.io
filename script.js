@@ -9,6 +9,7 @@ function updateContent() {
       document.getElementById('description').textContent = data.description;
       document.getElementById('download').textContent = data.download;
       document.getElementById('linkedin').textContent = data.linkedin;
+      document.getElementById('contact').textContent = data.contact;
     });
 }
 
