@@ -6,7 +6,8 @@ function updateContent() {
     .then(response => response.json())
     .then(data => {
       // Met à jour le contenu des éléments avec les nouvelles traductions
-      document.getElementById('description').textContent = data.greeting;
+      document.getElementById('description').textContent = data.description;
+      document.getElementById('download').textContent = data.download;
     });
 }
 
