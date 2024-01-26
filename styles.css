@@ -75,7 +75,8 @@ body {
 /*-----Apple switch-----*/
 
 .switch-container {
-  position: relative;
+  align-self: center;
+  margin-top: 2%;
 }
 
 .apple-switch {
