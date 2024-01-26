@@ -16,3 +16,12 @@ function myFunctionContact() {
         document.getElementById("contact-hide").style.display = "flex";
     }
 }
+
+function myFunctionDarkMode() {
+  if(document.getElementById("body").style.backgroundColor === "Black !important"){
+      document.getElementById("body").style.backgroundColor = "White";
+  }
+  else{
+      document.getElementById("contact-hide").style.backgroundColor = "Black !important";
+  }
+}
