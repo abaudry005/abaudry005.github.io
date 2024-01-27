@@ -12,5 +12,6 @@
     "orbow": "Acceder à Orbow",
     "fcp": "Dévelopeur Web à FCP Digital",
     "fcp-desc": "Stage de 3 mois pour concevoir et mettre à jour un site web (HTML, CSS, PHP). Récupération de données (via phpMyAdmin) à l'aide de requêtes SQL.",
-    "projects": "Projets"
+    "projects": "Projets",
+    "graph": "GraphVision (Outil de visualisation de données)"
   }

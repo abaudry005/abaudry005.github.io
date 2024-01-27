@@ -20,6 +20,7 @@ function updateContent() {
       document.getElementById('fcp').textContent = data.fcp;
       document.getElementById('fcp-desc').textContent = data.fcp-desc;
       document.getElementById('projects').textContent = data.projects;
+      document.getElementById('graph').textContent = data.graph;
     });
 }
 
