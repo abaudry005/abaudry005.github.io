@@ -25,6 +25,11 @@ function updateContent() {
       document.getElementById('flutter').textContent = data.flutter;
       document.getElementById('flutter_desc').textContent = data.flutter_desc;
       document.getElementById('eirbmon').textContent = data.eirbmon;
+      document.getElementById('eirbmon_desc').textContent = data.eirbmon_desc;
+      document.getElementById('more2').textContent = data.more2;
+      document.getElementById('bombeirb').textContent = data.bombeirb;
+      document.getElementById('bombeirb_desc').textContent = data.bombeirb_desc;
+      document.getElementById('github').textContent = data.github;
     });
 }
 

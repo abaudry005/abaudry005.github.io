@@ -17,5 +17,10 @@
     "graph_desc": "Project responding to a request from the company Orange with the objective of setting up a data visualization and processing Website using the vue.js framework. We used the mongodb database to store the data, which is processed at the backend level using nodejs.",
     "flutter": "Dart Flutter Application",
     "flutter_desc": "Development of a mobile application in Dart Flutter. Learning design methods for login, home and profile pages, all linked to the firebase database in order to obtain a stable version of the application on android and IOS devices.",
-    "eirbmon": "Project on Blockchain and NFTs"
+    "eirbmon": "Project on Blockchain and NFTs",
+    "eirbmon_desc": "Project aimed at implementing a website in order to set up a system for buying/selling NFTs which can be used in a video game coded with Unity (C#).",
+    "more2": "More",
+    "bombeirb": "Video game programming",
+    "bombeirb_desc": "Group project in C and SDL to produce a reproduction of the Bomberman video game.",
+    "github": "Check my github"
   }
