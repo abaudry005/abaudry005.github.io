@@ -15,6 +15,7 @@ function updateContent() {
       document.getElementById('experience').textContent = data.experience;
       document.getElementById('setec').textContent = data.setec;
       document.getElementById('setec-desc').textContent = data.setec-desc;
+      document.getElementById('more1').textContent = data.more1;
     });
 }
 
