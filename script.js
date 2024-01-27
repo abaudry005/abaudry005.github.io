@@ -13,6 +13,7 @@ function updateContent() {
       document.getElementById('skills').textContent = data.skills;
       document.getElementById('developer').textContent = data.developer;
       document.getElementById('experience').textContent = data.experience;
+      document.getElementById('setec').textContent = data.setec;
     });
 }
 
