@@ -14,14 +14,14 @@ function updateContent() {
       document.getElementById('developer').textContent = data.developer;
       document.getElementById('experience').textContent = data.experience;
       document.getElementById('setec').textContent = data.setec;
-      document.getElementById('setec-desc').textContent = data.setec-desc;
+      document.getElementById('setec_desc').textContent = data.setec_desc;
       document.getElementById('more1').textContent = data.more1;
       document.getElementById('orbow').textContent = data.orbow;
       document.getElementById('fcp').textContent = data.fcp;
-      document.getElementById('fcp-desc').textContent = data.fcp-desc;
+      document.getElementById('fcp_desc').textContent = data.fcp_desc;
       document.getElementById('projects').textContent = data.projects;
       document.getElementById('graph').textContent = data.graph;
-      document.getElementById('graph-desc').textContent = data.graph-desc;
+      document.getElementById('graph_desc').textContent = data.graph_desc;
     });
 }
 

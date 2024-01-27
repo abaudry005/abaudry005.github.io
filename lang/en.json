@@ -7,12 +7,12 @@
     "developer": "Developer",
     "experience": "Expériences",
     "setec": "Full stack developer at Terrasol Sectec",
-    "setec-desc": "6-month internship to help develop a genuine operating system dedicated to geotechnical engineering. The frontend development was done in react and the backend in java",
+    "setec_desc": "6-month internship to help develop a genuine operating system dedicated to geotechnical engineering. The frontend development was done in react and the backend in java",
     "more1": "More",
     "orbow": "Access to Orbow",
     "fcp": "Web developer at FCP Digital",
-    "fcp-desc": "3-month internship to design and update a website (HTML, CSS, PHP). data recovery (phpmyadmin) with SQL queries.",
+    "fcp_desc": "3-month internship to design and update a website (HTML, CSS, PHP). data recovery (phpmyadmin) with SQL queries.",
     "projects": "Projects",
     "graph": "GraphVision (data visualisation tool)",
-    "graph-desc": "Project responding to a request from the company Orange with the objective of setting up a data visualization and processing Website using the vue.js framework. We used the mongodb database to store the data, which is processed at the backend level using nodejs."
+    "graph_desc": "Project responding to a request from the company Orange with the objective of setting up a data visualization and processing Website using the vue.js framework. We used the mongodb database to store the data, which is processed at the backend level using nodejs."
   }
