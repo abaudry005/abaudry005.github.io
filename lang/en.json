@@ -6,5 +6,6 @@
     "skills": "Skills",
     "developer": "Developer",
     "experience": "Expériences",
-    "setec": "Full stack developer at Terrasol Sectec"
+    "setec": "Full stack developer at Terrasol Sectec",
+    "setec-desc": "6-month internship to help develop a genuine operating system dedicated to geotechnical engineering. The frontend development was done in react and the backend in java"
   }
