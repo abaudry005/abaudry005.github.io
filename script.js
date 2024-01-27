@@ -16,6 +16,9 @@ function updateContent() {
       document.getElementById('setec').textContent = data.setec;
       document.getElementById('setec-desc').textContent = data.setec-desc;
       document.getElementById('more1').textContent = data.more1;
+      document.getElementById('orbow').textContent = data.orbow;
+      document.getElementById('fcp').textContent = data.fcp;
+      document.getElementById('fcp-desc').textContent = data.fcp-desc;
     });
 }
 
