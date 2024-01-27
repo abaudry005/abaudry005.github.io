@@ -72,9 +72,67 @@ body {
     background-color: Black !important;
 }
 
+.switch-container {
+  align-self: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.apple-switch {
+  display: none;
+}
+
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 120px; /* Ajustez la largeur selon vos besoins */
+  height: 40px;
+  cursor: pointer;
+}
+
+.language-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  text-align: center;
+  font-size: 14px; /* Ajustez la taille de la police selon vos besoins */
+  color: white;
+}
+
+.language-label:first-child {
+  left: 0;
+}
+
+.language-label:last-child {
+  right: 0;
+}
+
+.switch {
+  position: absolute;
+  top: 50%;
+  left: 40px; /* Ajustez la position du switch selon vos besoins */
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #8364f2;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.apple-switch:checked + label {
+  background-color: #e3ad5e;
+}
+
+.apple-switch:checked + label .switch {
+  left: 80px; /* Ajustez la position du switch lorsqu'il est activé selon vos besoins */
+  background-color: white;
+}
+
+
 /*-----Apple switch-----*/
 
-.switch-container {
+/* .switch-container {
   align-self: center;
   margin-left: auto;
   padding-right: 20px;
@@ -113,7 +171,7 @@ body {
 
 .apple-switch:checked + label:before {
   transform: translateX(40px) translateY(-50%);
-}
+} */
 
 /*----------------*/
 
