@@ -30,6 +30,9 @@ function updateContent() {
       document.getElementById('bombeirb').textContent = data.bombeirb;
       document.getElementById('bombeirb_desc').textContent = data.bombeirb_desc;
       document.getElementById('github').textContent = data.github;
+      document.getElementById('Hobbies').textContent = data.Hobbies;
+      document.getElementById('about').textContent = data.about;
+      document.getElementById('hobbies_txt').textContent = data.hobbies_txt;
     });
 }
 
