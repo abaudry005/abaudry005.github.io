@@ -14,5 +14,7 @@
     "fcp_desc": "3-month internship to design and update a website (HTML, CSS, PHP). data recovery (phpmyadmin) with SQL queries.",
     "projects": "Projects",
     "graph": "GraphVision (data visualisation tool)",
-    "graph_desc": "Project responding to a request from the company Orange with the objective of setting up a data visualization and processing Website using the vue.js framework. We used the mongodb database to store the data, which is processed at the backend level using nodejs."
+    "graph_desc": "Project responding to a request from the company Orange with the objective of setting up a data visualization and processing Website using the vue.js framework. We used the mongodb database to store the data, which is processed at the backend level using nodejs.",
+    "flutter": "Dart Flutter Application",
+    "flutter_desc": "Development of a mobile application in Dart Flutter. Learning design methods for login, home and profile pages, all linked to the firebase database in order to obtain a stable version of the application on android and IOS devices."
   }

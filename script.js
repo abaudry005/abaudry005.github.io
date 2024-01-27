@@ -22,6 +22,8 @@ function updateContent() {
       document.getElementById('projects').textContent = data.projects;
       document.getElementById('graph').textContent = data.graph;
       document.getElementById('graph_desc').textContent = data.graph_desc;
+      document.getElementById('flutter').textContent = data.flutter;
+      document.getElementById('flutter_desc').textContent = data.flutter_desc;
     });
 }
 
