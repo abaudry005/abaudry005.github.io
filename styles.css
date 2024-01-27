@@ -98,17 +98,17 @@ body {
   transform: translateY(-50%);
   width: 24px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
 }
 
 .language-label:first-child {
-  left: 4px;
+  left: 8px;
 }
 
 .language-label:last-child {
-  right: 4px;
+  right: 8px;
 }
 
 .switch {
