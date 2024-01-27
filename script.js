@@ -19,6 +19,7 @@ function updateContent() {
       document.getElementById('orbow').textContent = data.orbow;
       document.getElementById('fcp').textContent = data.fcp;
       document.getElementById('fcp-desc').textContent = data.fcp-desc;
+      document.getElementById('projects').textContent = data.projects;
     });
 }
 
