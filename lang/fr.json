@@ -16,5 +16,6 @@
     "graph": "GraphVision (Outil de visualisation de données)",
     "graph_desc": "Projet répondant à une demande de l'entreprise Orange dans le but de mettre en place un site web de visualisation et de traitement des données en utilisant le framework Vue.js. Nous avons utilisé la base de données MongoDB pour stocker les données, qui sont traitées au niveau du backend à l'aide de Node.js.",
     "flutter": "Application en Dart Flutter",
-    "flutter_desc": "Développement d'une application mobile en Dart Flutter. Apprentissage des méthodes de conception pour les pages de connexion, d'accueil et de profil, toutes liées à la base de données Firebase afin d'obtenir une version stable de l'application sur les appareils Android et iOS."
+    "flutter_desc": "Développement d'une application mobile en Dart Flutter. Apprentissage des méthodes de conception pour les pages de connexion, d'accueil et de profil, toutes liées à la base de données Firebase afin d'obtenir une version stable de l'application sur les appareils Android et iOS.",
+    "eirbmon": "Projet sur la Blockchain et les NFTs"
   }
