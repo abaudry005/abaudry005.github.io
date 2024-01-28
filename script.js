@@ -136,11 +136,11 @@ createBoard();
 /*------Snake_Game------*/
 
 document.addEventListener('DOMContentLoaded', () => {
-  const gridSize = 10;
+  const gridSize = 20;
   const board = document.getElementById('game-board');
   const cells = [];
 
-  let snake = [{ x: 5, y: 5 }];
+  let snake = [{ x: 10, y: 10 }];
   let direction = 'right';
   let food = getRandomCell();
 
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Game Over!');
 
         // Reinitialiser le jeu
-        snake = [{ x: 5, y: 5 }];
+        snake = [{ x: 10, y: 10 }];
         direction = 'right';
         food = getRandomCell();
 
