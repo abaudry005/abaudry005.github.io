@@ -144,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const playButton = document.getElementById('play-button');
   const gameOverModal = document.getElementById('game-over-modal');
-  const closeButton = document.getElementById('close-button');
 
   playButton.addEventListener('click', () => {
     playButton.style.display = 'none';
@@ -152,15 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initGame();
   });
 
-  closeButton.addEventListener('click', () => {
-    closeModal();
-    initGame();
-  });
-
   function initGame() {
     resetGame();
     drawSnake();
     drawFood();
+    document.addEventListener('keydown', handleKeyPress);
     setInterval(() => {
       move();
       checkCollision();
@@ -249,17 +244,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function handleKeyPress(event) {
+    switch (event.key) {
+      case 'ArrowUp':
+        direction = 'up';
+        break;
+      case 'ArrowDown':
+        direction = 'down';
+        break;
+      case 'ArrowLeft':
+        direction = 'left';
+        break;
+      case 'ArrowRight':
+        direction = 'right';
+        break;
+    }
+  }
+
   function openModal() {
     gameOverModal.style.display = 'block';
     gameOverModal.classList.remove('fade-in');
     gameOverModal.classList.add('fade-out');
-  }
-
-  function closeModal() {
-    gameOverModal.addEventListener('animationend', () => {
-      gameOverModal.style.display = 'none';
-      gameOverModal.classList.remove('fade-out');
-      gameOverModal.classList.add('fade-in');
-    });
   }
 });

@@ -791,12 +791,14 @@ a:not([href]):hover{
 #game-board {
   display: grid;
   grid-template-columns: repeat(10, 20px);
+  grid-gap: 1px;
 }
 
 .cell {
   width: 20px;
   height: 20px;
   border: 1px solid #ddd;
+  box-sizing: border-box;
 }
 
 .snake {
@@ -807,8 +809,8 @@ a:not([href]):hover{
   background-color: #FF5733;
 }
 
-.hidden {
-  display: none;
+#play-button {
+  margin-top: 10px;
 }
 
 #game-over-modal {
@@ -829,7 +831,6 @@ a:not([href]):hover{
   background: white;
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
 }
 
 .fade-in {
@@ -848,6 +849,10 @@ a:not([href]):hover{
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
+}
+
+.hidden {
+  display: none;
 }
 
 /*-------contact--------*/
