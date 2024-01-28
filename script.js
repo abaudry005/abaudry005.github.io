@@ -241,11 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Game Over!');
         stopGame();
         showPlayButton();
-        // Réinitialiser le jeu
-        snake = [{ x: 5, y: 5 }];
-        direction = 'right';
-        clearFood();
-        food = getRandomCell();
+        resetGame();
         break;
       }
     }
@@ -254,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function startGame() {
     gameRunning = true;
     hidePlayButton();
+    clearBoard();
     createBoard();
     drawSnake();
     drawFood();
@@ -267,6 +264,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function stopGame() {
     gameRunning = false;
     clearInterval(gameInterval);
+  }
+
+  function resetGame() {
+    snake = [{ x: 5, y: 5 }];
+    clearBoard();
+    createBoard();
+    drawSnake();
   }
 
   function clearBoard() {
