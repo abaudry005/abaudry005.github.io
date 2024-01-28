@@ -92,7 +92,7 @@ function createBoard() {
     cardFront.textContent = card;
 
     const cardBack = document.createElement('div');
-    cardFront.textContent = "?";
+    cardBack.textContent = "?";
     cardBack.classList.add('card-back');
 
     cardElement.appendChild(cardFront);
