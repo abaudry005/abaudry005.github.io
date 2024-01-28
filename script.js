@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let snake = [{ x: 5, y: 5 }];
   let direction = 'right';
   let food = getRandomCell();
+  let gameInterval;
 
   const playButton = document.getElementById('play-button');
   playButton.addEventListener('click', () => {
@@ -150,9 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initGame() {
     resetGame();
-    drawSnake();
-    drawFood();
-    setInterval(() => {
+    gameInterval = setInterval(() => {
       move();
       checkCollision();
     }, 200);
@@ -162,15 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
     snake = [{ x: 5, y: 5 }];
     clearBoard();
     createBoard();
+    drawSnake();
+    drawFood();
   }
 
   function clearBoard() {
-    cells.forEach(cell => cell.classList.remove('snake', 'food'));
-  }
-
-  function clearFood() {
-    const index = food.x + food.y * gridSize;
-    cells[index].classList.remove('food');
+    cells.forEach(cell => cell.remove());
+    cells.length = 0;
   }
 
   function createBoard() {
@@ -272,10 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
-  createBoard();
-  drawSnake();
-  drawFood();
 
   document.addEventListener('keydown', handleKeyPress);
 });
