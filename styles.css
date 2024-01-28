@@ -787,7 +787,6 @@ a:not([href]):hover{
   transform: rotateY(360deg);
 }
 /*--------Game_Snake--------*/
-
 #game-board {
   display: grid;
   grid-template-columns: repeat(10, 20px);
@@ -823,7 +822,6 @@ a:not([href]):hover{
 #play-button {
   z-index: 1; /* Assure que le bouton est superposé à la grille */
 }
-
 /*-------contact--------*/
 
 .bordure {

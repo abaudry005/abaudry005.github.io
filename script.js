@@ -135,6 +135,7 @@ createBoard();
 
 /*------Snake_Game------*/
 document.addEventListener('DOMContentLoaded', () => {
+
   const gridSize = 10;
   const board = document.getElementById('game-board');
   const cells = [];
@@ -145,6 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let gameInterval;
 
   const playButton = document.getElementById('play-button');
+  const gameBoard = document.getElementById('game-board');
+
+  playButton.addEventListener('click', () => {
+    gameBoard.classList.remove('overlay');
+  });
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
