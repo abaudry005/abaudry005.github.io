@@ -727,6 +727,14 @@ a:not([href]):hover{
     padding-right: 10%;
 }
 
+.mini_games{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10%;
+  padding-top: 20px;
+}
+
 
 /*--------Game_memory--------*/
 
