@@ -196,6 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
     snake.unshift(head);
 
     if (head.x === food.x && head.y === food.y) {
+      // Si le serpent mange la nourriture
+      const foodCellIndex = food.x + food.y * gridSize;
+      cells[foodCellIndex].classList.remove('food');
+
       food = getRandomCell();
     } else {
       snake.pop();
@@ -229,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
 
-        // Reinitialiser le jeu
+        // Réinitialiser le jeu
         snake = [{ x: 5, y: 5 }];
         direction = 'right';
         food = getRandomCell();
