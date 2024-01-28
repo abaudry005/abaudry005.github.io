@@ -134,7 +134,6 @@ function checkMatch() {
 createBoard();
 
 /*------Snake_Game------*/
-
 document.addEventListener('DOMContentLoaded', () => {
   const gridSize = 10;
   const board = document.getElementById('game-board');
@@ -149,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   playButton.addEventListener('click', () => {
     playButton.style.display = 'none';
+    document.getElementById('game-board').classList.remove('hidden');
     initGame();
   });
 
