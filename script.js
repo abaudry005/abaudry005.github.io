@@ -45,7 +45,7 @@ document.getElementById('apple-switch').addEventListener('change', () => {
 // Charge le contenu initial au chargement de la page
 updateContent();
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/*------Topnav--------*/
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -63,3 +63,67 @@ function myFunctionContact() {
         document.getElementById("contact-hide").style.display = "flex";
     }
 }
+
+/*------Game------*/
+
+const cards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H'];
+let flippedCards = [];
+let matchedCards = [];
+
+function shuffle(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+function createBoard() {
+  const shuffledCards = shuffle(cards);
+  const memoryBoard = document.getElementById('memory-board');
+
+  shuffledCards.forEach((card, index) => {
+    const cardElement = document.createElement('div');
+    cardElement.classList.add('card');
+    cardElement.dataset.card = card;
+    cardElement.addEventListener('click', flipCard);
+
+    const cardFront = document.createElement('div');
+    cardFront.classList.add('card-front');
+    cardFront.textContent = card;
+
+    const cardBack = document.createElement('div');
+    cardBack.classList.add('card-back');
+
+    cardElement.appendChild(cardFront);
+    cardElement.appendChild(cardBack);
+
+    memoryBoard.appendChild(cardElement);
+  });
+}
+
+function flipCard() {
+  if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+    this.classList.add('flipped');
+    flippedCards.push(this);
+
+    if (flippedCards.length === 2) {
+      setTimeout(checkMatch, 500);
+    }
+  }
+}
+
+function checkMatch() {
+  const [card1, card2] = flippedCards;
+
+  if (card1.dataset.card === card2.dataset.card) {
+    matchedCards.push(card1, card2);
+
+    if (matchedCards.length === cards.length) {
+      alert('Congratulations! You won!');
+    }
+  } else {
+    card1.classList.remove('flipped');
+    card2.classList.remove('flipped');
+  }
+
+  flippedCards = [];
+}
+
+createBoard();
