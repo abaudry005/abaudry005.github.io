@@ -828,7 +828,8 @@ a:not([href]):hover{
 }
 
 #play-button {
-  z-index: 1; /* Assure que le bouton est superposé à la grille */
+  z-index: 1;
+  border-radius: 10px;
 }
 /*-------contact--------*/
 
