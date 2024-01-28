@@ -732,7 +732,7 @@ a:not([href]):hover{
 
 #memory-board {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 40px);
   grid-gap: 10px;
 }
 
