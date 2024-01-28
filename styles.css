@@ -731,7 +731,7 @@ a:not([href]):hover{
 /*--------Game_memory--------*/
 
 .mini_game{
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 15px;
   display: flex;
 }
