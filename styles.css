@@ -790,7 +790,7 @@ a:not([href]):hover{
 
 #game-board {
   display: grid;
-  grid-template-columns: repeat(20, 10px);
+  grid-template-columns: repeat(10, 20px);
 }
 
 .cell {

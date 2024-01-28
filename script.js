@@ -136,7 +136,7 @@ createBoard();
 /*------Snake_Game------*/
 
 document.addEventListener('DOMContentLoaded', () => {
-  const gridSize = 20;
+  const gridSize = 10;
   const board = document.getElementById('game-board');
   const cells = [];
 
