@@ -89,7 +89,7 @@ function createBoard() {
 
     const cardFront = document.createElement('div');
     cardFront.classList.add('card-front', 'card-content');
-    cardFront.textContent = "?";
+    //cardFront.textContent = "?";
 
     const cardBack = document.createElement('div');
     cardBack.textContent = card;
