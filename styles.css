@@ -730,12 +730,15 @@ a:not([href]):hover{
 
 /*--------Game--------*/
 
+.mini_game{
+  justify-content: center;
+  padding-top: 15px;
+}
+
 #memory-board {
   display: grid;
   grid-template-columns: repeat(4, 40px);
   grid-gap: 10px;
-  justify-content: center;
-  padding-top: 15px;
 }
 
 .card {
