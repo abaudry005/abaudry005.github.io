@@ -240,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Réinitialiser le jeu
         snake = [{ x: 5, y: 5 }];
         direction = 'right';
+        clearFood();
         food = getRandomCell();
 
         break;
