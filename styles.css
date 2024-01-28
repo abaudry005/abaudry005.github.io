@@ -748,11 +748,26 @@ a:not([href]):hover{
   font-size: 24px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.card .card-content {
+  position: absolute;
+}
+
+.card .card-front {
+  z-index: 2;
+}
+
+.card .card-back {
+  z-index: 1;
+  transform: rotateY(180deg);
 }
 
 .card.flipped {
   transform: rotateY(180deg);
 }
+
 
 
 /*--------------------*/

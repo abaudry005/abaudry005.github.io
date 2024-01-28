@@ -88,12 +88,12 @@ function createBoard() {
     cardElement.addEventListener('click', flipCard);
 
     const cardFront = document.createElement('div');
-    cardFront.classList.add('card-front');
+    cardFront.classList.add('card-front', 'card-content');
     cardFront.textContent = card;
 
     const cardBack = document.createElement('div');
     cardBack.textContent = "?";
-    cardBack.classList.add('card-back');
+    cardBack.classList.add('card-back', 'card-content');
 
     cardElement.appendChild(cardFront);
     cardElement.appendChild(cardBack);
