@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Game Over!');
 
         // Reinitialiser le jeu
-        snake = [{ x: 10, y: 10 }];
+        snake = [{ x: 5, y: 5 }];
         direction = 'right';
         food = getRandomCell();
 
