@@ -142,8 +142,36 @@ document.addEventListener('DOMContentLoaded', () => {
   let snake = [{ x: 5, y: 5 }];
   let direction = 'right';
   let food = getRandomCell();
-  let gameInterval;
-  let gameRunning = false;
+
+  const playButton = document.getElementById('play-button');
+  const gameOverModal = document.getElementById('game-over-modal');
+  const closeButton = document.getElementById('close-button');
+
+  playButton.addEventListener('click', () => {
+    playButton.style.display = 'none';
+    initGame();
+  });
+
+  closeButton.addEventListener('click', () => {
+    closeModal();
+    initGame();
+  });
+
+  function initGame() {
+    resetGame();
+    drawSnake();
+    drawFood();
+    setInterval(() => {
+      move();
+      checkCollision();
+    }, 200);
+  }
+
+  function resetGame() {
+    snake = [{ x: 5, y: 5 }];
+    clearBoard();
+    createBoard();
+  }
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
@@ -154,6 +182,10 @@ document.addEventListener('DOMContentLoaded', () => {
         board.appendChild(cell);
       }
     }
+  }
+
+  function clearBoard() {
+    cells.forEach(cell => cell.classList.remove('snake', 'food'));
   }
 
   function drawSnake() {
@@ -169,11 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
     cells[index].classList.add('food');
   }
 
-  function clearFood() {
-    const index = food.x + food.y * gridSize;
-    cells[index].classList.remove('food');
-  }
-
   function getRandomCell() {
     return {
       x: Math.floor(Math.random() * gridSize),
@@ -182,8 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function move() {
-    if (!gameRunning) return;
-
     const head = Object.assign({}, snake[0]);
 
     switch (direction) {
@@ -204,7 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
     snake.unshift(head);
 
     if (head.x === food.x && head.y === food.y) {
-      clearFood();
       food = getRandomCell();
     } else {
       snake.pop();
@@ -214,96 +238,28 @@ document.addEventListener('DOMContentLoaded', () => {
     drawFood();
   }
 
-  function handleKeyPress(event) {
-    event.preventDefault();
-
-    switch (event.key) {
-      case 'ArrowUp':
-        direction = 'up';
-        break;
-      case 'ArrowDown':
-        direction = 'down';
-        break;
-      case 'ArrowLeft':
-        direction = 'left';
-        break;
-      case 'ArrowRight':
-        direction = 'right';
-        break;
-    }
-  }
-
   function checkCollision() {
     const head = snake[0];
 
     for (let i = 1; i < snake.length; i++) {
       if (head.x === snake[i].x && head.y === snake[i].y) {
-        alert('Game Over!');
-        stopGame();
-        showPlayButton();
-        resetGame();
+        openModal();
         break;
       }
     }
   }
 
-  function startGame() {
-    gameRunning = true;
-    hidePlayButton();
-    clearBoard();
-    createBoard();
-    drawSnake();
-    drawFood();
-    document.addEventListener('keydown', handleKeyPress);
-    gameInterval = setInterval(() => {
-      move();
-      checkCollision();
-    }, 200);
+  function openModal() {
+    gameOverModal.style.display = 'block';
+    gameOverModal.classList.remove('fade-in');
+    gameOverModal.classList.add('fade-out');
   }
 
-  function stopGame() {
-    gameRunning = false;
-    clearInterval(gameInterval);
+  function closeModal() {
+    gameOverModal.addEventListener('animationend', () => {
+      gameOverModal.style.display = 'none';
+      gameOverModal.classList.remove('fade-out');
+      gameOverModal.classList.add('fade-in');
+    });
   }
-
-  function resetGame() {
-    snake = [{ x: 5, y: 5 }];
-    clearBoard();
-    createBoard();
-    drawSnake();
-  }
-
-  function clearBoard() {
-    cells.forEach(cell => cell.className = 'cell');
-  }
-
-  function hidePlayButton() {
-    const playButton = document.getElementById('play-button');
-    playButton.style.display = 'none';
-  }
-
-  function showPlayButton() {
-    const playButton = document.getElementById('play-button');
-    playButton.style.display = 'block';
-  }
-
-  // Ajoutez un gestionnaire d'événements au bouton "Play"
-  const playButton = document.getElementById('play-button');
-  playButton.addEventListener('click', startGame);
-
-  // Ajoutez un gestionnaire d'événements à la fenêtre modale de défaite
-  const modal = document.getElementById('game-over-modal');
-  modal.addEventListener('animationend', () => {
-    modal.style.display = 'none';
-  });
-
-  // Ajoutez un gestionnaire d'événements au bouton de fermeture de la fenêtre modale
-  const closeButton = document.getElementById('close-button');
-  closeButton.addEventListener('click', () => {
-    modal.classList.remove('fade-in');
-    modal.classList.add('fade-out');
-    stopGame();
-    showPlayButton();
-    resetGame();
-  });
 });
