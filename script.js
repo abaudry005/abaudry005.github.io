@@ -213,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleKeyPress(event) {
+    event.preventDefault();
     switch (event.key) {
       case 'ArrowUp':
         direction = 'up';
