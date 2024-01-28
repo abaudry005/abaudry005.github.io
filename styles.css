@@ -766,6 +766,14 @@ a:not([href]):hover{
 .card .card-back {
   background-color: #ddd;
   transform: rotateY(180deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card.flipped .card-front {

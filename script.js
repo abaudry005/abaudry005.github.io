@@ -69,7 +69,7 @@ function myFunctionContact() {
 
 /*------Game------*/
 
-const cards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H'];
+const cards = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png', 'image7.png', 'image8.png'];
 let flippedCards = [];
 let matchedCards = [];
 
@@ -89,11 +89,12 @@ function createBoard() {
 
     const cardFront = document.createElement('div');
     cardFront.classList.add('card-front', 'card-content');
-    //cardFront.textContent = "?";
 
-    const cardBack = document.createElement('div');
-    cardBack.textContent = card;
-    cardBack.classList.add('card-back', 'card-content');
+  const cardBack = document.createElement('div');
+  cardBack.classList.add('card-back', 'card-content');
+  const imgElement = document.createElement('img');
+  imgElement.src = card;
+  cardBack.appendChild(imgElement);
 
     cardElement.appendChild(cardFront);
     cardElement.appendChild(cardBack);
