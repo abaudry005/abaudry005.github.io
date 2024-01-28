@@ -139,9 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const board = document.getElementById('game-board');
   const cells = [];
 
-  let snake = [{ x: 5, y: 5 }];
+  let snake = [];
   let direction = 'right';
   let food = getRandomCell();
+  let gameInterval;
+
+  const playButton = document.getElementById('play-button');
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
@@ -204,7 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
       removeFood();
       food = getRandomCell();
     } else {
-      snake.pop();
+      const tail = snake.pop();
+      const tailIndex = tail.x + tail.y * gridSize;
+      cells[tailIndex].classList.remove('snake');
     }
 
     drawSnake();
@@ -237,24 +242,46 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Game Over!');
 
         // Réinitialiser le jeu
-        snake = [{ x: 5, y: 5 }];
+        snake = [];
         direction = 'right';
-        removeFood();
         food = getRandomCell();
+
+        // Retirer la classe 'food' pour la dernière nourriture
+        removeFood();
+
+        // Arrêter l'intervalle de jeu
+        clearInterval(gameInterval);
 
         break;
       }
     }
   }
 
+  function startGame() {
+    // Initialiser le serpent au centre du tableau
+    snake = [{ x: Math.floor(gridSize / 2), y: Math.floor(gridSize / 2) }];
+    drawSnake();
+    drawFood();
+
+    // Démarrer l'intervalle de jeu
+    gameInterval = setInterval(() => {
+      move();
+      checkCollision();
+    }, 200);
+  }
+
+  // Écouter le clic sur le bouton Play
+  playButton.addEventListener('click', () => {
+    // Cacher le bouton Play après le clic
+    playButton.style.display = 'none';
+
+    // Démarrer le jeu
+    startGame();
+  });
+
+  // Créer le tableau au chargement de la page
   createBoard();
-  drawSnake();
-  drawFood();
 
+  // Écouter les touches du clavier
   document.addEventListener('keydown', handleKeyPress);
-
-  setInterval(() => {
-    move();
-    checkCollision();
-  }, 200);
 });
