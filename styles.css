@@ -759,6 +759,8 @@ a:not([href]):hover{
 
 .card .card-front {
   background-color: #ddd;
+  background-image: url('./images/cube.png');
+  background-size: cover;
 }
 
 .card .card-back {
