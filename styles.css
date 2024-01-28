@@ -790,15 +790,13 @@ a:not([href]):hover{
 
 #game-board {
   display: grid;
-  grid-template-columns: repeat(10, 20px);
-  grid-gap: 1px;
+  grid-template-columns: repeat(10, 30px);
 }
 
 .cell {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #ddd;
-  box-sizing: border-box;
 }
 
 .snake {
@@ -807,52 +805,6 @@ a:not([href]):hover{
 
 .food {
   background-color: #FF5733;
-}
-
-#play-button {
-  margin-top: 10px;
-}
-
-#game-over-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.fade-in {
-  animation: fadeIn 0.5s;
-}
-
-.fade-out {
-  animation: fadeOut 0.5s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-.hidden {
-  display: none;
 }
 
 /*-------contact--------*/
