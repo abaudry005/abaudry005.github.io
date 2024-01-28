@@ -67,7 +67,7 @@ function myFunctionContact() {
     }
 }
 
-/*------Game------*/
+/*------Memory_Game------*/
 
 const cards = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png', 'images/image6.png', 'images/image7.png', 'images/image8.png', 'images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png', 'images/image6.png', 'images/image7.png', 'images/image8.png'];
 let flippedCards = [];
@@ -132,3 +132,121 @@ function checkMatch() {
 }
 
 createBoard();
+
+/*------Snake_Game------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const gridSize = 20;
+  const board = document.getElementById('game-board');
+  const cells = [];
+
+  let snake = [{ x: 10, y: 10 }];
+  let direction = 'right';
+  let food = getRandomCell();
+
+  function createBoard() {
+    for (let row = 0; row < gridSize; row++) {
+      for (let col = 0; col < gridSize; col++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        cells.push(cell);
+        board.appendChild(cell);
+      }
+    }
+  }
+
+  function drawSnake() {
+    cells.forEach(cell => cell.classList.remove('snake'));
+    snake.forEach(segment => {
+      const index = segment.x + segment.y * gridSize;
+      cells[index].classList.add('snake');
+    });
+  }
+
+  function drawFood() {
+    const index = food.x + food.y * gridSize;
+    cells[index].classList.add('food');
+  }
+
+  function getRandomCell() {
+    return {
+      x: Math.floor(Math.random() * gridSize),
+      y: Math.floor(Math.random() * gridSize)
+    };
+  }
+
+  function move() {
+    const head = Object.assign({}, snake[0]);
+
+    switch (direction) {
+      case 'up':
+        head.y = (head.y - 1 + gridSize) % gridSize;
+        break;
+      case 'down':
+        head.y = (head.y + 1) % gridSize;
+        break;
+      case 'left':
+        head.x = (head.x - 1 + gridSize) % gridSize;
+        break;
+      case 'right':
+        head.x = (head.x + 1) % gridSize;
+        break;
+    }
+
+    snake.unshift(head);
+
+    if (head.x === food.x && head.y === food.y) {
+      food = getRandomCell();
+    } else {
+      snake.pop();
+    }
+
+    drawSnake();
+    drawFood();
+  }
+
+  function handleKeyPress(event) {
+    switch (event.key) {
+      case 'ArrowUp':
+        direction = 'up';
+        break;
+      case 'ArrowDown':
+        direction = 'down';
+        break;
+      case 'ArrowLeft':
+        direction = 'left';
+        break;
+      case 'ArrowRight':
+        direction = 'right';
+        break;
+    }
+  }
+
+  function checkCollision() {
+    const head = snake[0];
+
+    for (let i = 1; i < snake.length; i++) {
+      if (head.x === snake[i].x && head.y === snake[i].y) {
+        alert('Game Over!');
+
+        // Reinitialiser le jeu
+        snake = [{ x: 10, y: 10 }];
+        direction = 'right';
+        food = getRandomCell();
+
+        break;
+      }
+    }
+  }
+
+  createBoard();
+  drawSnake();
+  drawFood();
+
+  document.addEventListener('keydown', handleKeyPress);
+
+  setInterval(() => {
+    move();
+    checkCollision();
+  }, 200);
+});

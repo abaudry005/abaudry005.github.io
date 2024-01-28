@@ -728,7 +728,7 @@ a:not([href]):hover{
 }
 
 
-/*--------Game--------*/
+/*--------Game_memory--------*/
 
 .mini_game{
   justify-content: center;
@@ -786,7 +786,27 @@ a:not([href]):hover{
 .card.flipped .card-back {
   transform: rotateY(360deg);
 }
-/*--------------------*/
+/*--------Game_Snake--------*/
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+}
+
+.snake {
+  background-color: #4CAF50;
+}
+
+.food {
+  background-color: #FF5733;
+}
+
 
 /*-------contact--------*/
 
