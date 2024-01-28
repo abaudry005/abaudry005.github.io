@@ -733,6 +733,7 @@ a:not([href]):hover{
 .mini_game{
   justify-content: center;
   padding-top: 15px;
+  display: flex;
 }
 
 #memory-board {
