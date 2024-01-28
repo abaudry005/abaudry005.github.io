@@ -752,6 +752,16 @@ a:not([href]):hover{
   transform: rotateY(180deg);
 }
 
+.card .front,
+.card.flip .back {
+    display: block;
+}
+
+.card .back,
+.card.flip .front {
+    display: none;
+}
+
 /*--------------------*/
 
 /*-------contact--------*/
