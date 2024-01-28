@@ -233,7 +233,11 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
     }
   }
-
+  function clearFood() {
+    const index = food.x + food.y * gridSize;
+    cells[index].classList.remove('food');
+  }
+  
   function checkCollision() {
     const head = snake[0];
   
@@ -246,8 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
         direction = 'right';
         food = getRandomCell();
   
-        // Retirer la classe 'food' pour la dernière nourriture
-        removeFood();
+        // Effacer la nourriture
+        clearFood();
   
         // Arrêter l'intervalle de jeu
         clearInterval(gameInterval);
