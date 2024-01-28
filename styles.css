@@ -734,7 +734,7 @@ a:not([href]):hover{
   display: grid;
   grid-template-columns: repeat(4, 40px);
   grid-gap: 10px;
-  justify-self: center;
+  justify-content: center;
 }
 
 .card {
