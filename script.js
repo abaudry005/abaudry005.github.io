@@ -236,22 +236,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function checkCollision() {
     const head = snake[0];
-
+  
     for (let i = 1; i < snake.length; i++) {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
-
+  
         // Réinitialiser le jeu
         snake = [];
         direction = 'right';
         food = getRandomCell();
-
+  
         // Retirer la classe 'food' pour la dernière nourriture
         removeFood();
-
+  
         // Arrêter l'intervalle de jeu
         clearInterval(gameInterval);
-
+  
+        // Afficher le bouton Play
+        playButton.style.display = 'block';
+  
         break;
       }
     }
