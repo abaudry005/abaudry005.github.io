@@ -753,13 +753,8 @@ a:not([href]):hover{
   transform: rotateY(180deg);
 }
 
-.card .back {
+.card-back {
   background-color: red;
-  display: none;
-}
-
-.card.flip .back {
-  display: block;
 }
 
 
