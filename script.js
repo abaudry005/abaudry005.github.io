@@ -290,4 +290,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ajoutez un gestionnaire d'événements au bouton "Play"
   const playButton = document.getElementById('play-button');
   playButton.addEventListener('click', startGame);
+
+  // Ajoutez un gestionnaire d'événements à la fenêtre modale de défaite
+  const modal = document.getElementById('game-over-modal');
+  modal.addEventListener('animationend', () => {
+    modal.style.display = 'none';
+  });
+
+  // Ajoutez un gestionnaire d'événements au bouton de fermeture de la fenêtre modale
+  const closeButton = document.getElementById('close-button');
+  closeButton.addEventListener('click', () => {
+    modal.classList.remove('fade-in');
+    modal.classList.add('fade-out');
+    stopGame();
+    showPlayButton();
+    resetGame();
+  });
 });
