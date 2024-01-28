@@ -136,11 +136,11 @@ createBoard();
 /*------Snake_Game------*/
 
 document.addEventListener('DOMContentLoaded', () => {
-  const gridSize = 20;
+  const gridSize = 10;
   const board = document.getElementById('game-board');
   const cells = [];
 
-  let snake = [{ x: 10, y: 10 }];
+  let snake = [{ x: 5, y: 5 }];
   let direction = 'right';
   let food = getRandomCell();
 
