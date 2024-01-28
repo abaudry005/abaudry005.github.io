@@ -168,6 +168,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cells[index].classList.add('food');
   }
 
+  function removeFood() {
+    const index = food.x + food.y * gridSize;
+    cells[index].classList.remove('food');
+  }
+
   function getRandomCell() {
     return {
       x: Math.floor(Math.random() * gridSize),
@@ -197,9 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (head.x === food.x && head.y === food.y) {
       // Si le serpent mange la nourriture
-      const foodCellIndex = food.x + food.y * gridSize;
-      cells[foodCellIndex].classList.remove('food');
-
+      removeFood();
       food = getRandomCell();
     } else {
       snake.pop();
