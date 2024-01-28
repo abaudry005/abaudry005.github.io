@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let direction = 'right';
   let food = getRandomCell();
   let gameInterval;
+  let gameRunning = false;
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
@@ -181,6 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function move() {
+    if (!gameRunning) return;
+
     const head = Object.assign({}, snake[0]);
 
     switch (direction) {
@@ -237,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
         stopGame();
+        showPlayButton();
         // Réinitialiser le jeu
         snake = [{ x: 5, y: 5 }];
         direction = 'right';
@@ -248,6 +252,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function startGame() {
+    gameRunning = true;
+    hidePlayButton();
     createBoard();
     drawSnake();
     drawFood();
@@ -259,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function stopGame() {
+    gameRunning = false;
     clearInterval(gameInterval);
   }
 
@@ -266,10 +273,17 @@ document.addEventListener('DOMContentLoaded', () => {
     cells.forEach(cell => cell.className = 'cell');
   }
 
+  function hidePlayButton() {
+    const playButton = document.getElementById('play-button');
+    playButton.style.display = 'none';
+  }
+
+  function showPlayButton() {
+    const playButton = document.getElementById('play-button');
+    playButton.style.display = 'block';
+  }
+
   // Ajoutez un gestionnaire d'événements au bouton "Play"
   const playButton = document.getElementById('play-button');
-  playButton.addEventListener('click', () => {
-    clearBoard();
-    startGame();
-  });
+  playButton.addEventListener('click', startGame);
 });
