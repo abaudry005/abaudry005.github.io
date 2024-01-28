@@ -750,6 +750,7 @@ a:not([href]):hover{
 
 .card.flipped {
   transform: rotateY(180deg);
+  background-color: rgb(106, 0, 0);
 }
 
 /*--------------------*/
