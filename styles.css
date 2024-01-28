@@ -791,6 +791,19 @@ a:not([href]):hover{
 #game-board {
   display: grid;
   grid-template-columns: repeat(10, 20px);
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacité réglable ici */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cell {
@@ -807,6 +820,9 @@ a:not([href]):hover{
   background-color: #FF5733;
 }
 
+#play-button {
+  z-index: 1; /* Assure que le bouton est superposé à la grille */
+}
 /*-------contact--------*/
 
 .bordure {
