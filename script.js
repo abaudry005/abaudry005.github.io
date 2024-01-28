@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridSize = 10;
   const board = document.getElementById('game-board');
   const cells = [];
-
   let snake = [{ x: 5, y: 5 }];
   let direction = 'right';
   let food = getRandomCell();
+  let gameInterval;
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cells[index].classList.add('food');
   }
 
-  function removeFood() {
+  function clearFood() {
     const index = food.x + food.y * gridSize;
     cells[index].classList.remove('food');
   }
@@ -201,8 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     snake.unshift(head);
 
     if (head.x === food.x && head.y === food.y) {
-      // Si le serpent mange la nourriture
-      removeFood();
+      clearFood();
       food = getRandomCell();
     } else {
       snake.pop();
@@ -214,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleKeyPress(event) {
     event.preventDefault();
+
     switch (event.key) {
       case 'ArrowUp':
         direction = 'up';
@@ -236,26 +236,40 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 1; i < snake.length; i++) {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
-
+        stopGame();
         // Réinitialiser le jeu
         snake = [{ x: 5, y: 5 }];
         direction = 'right';
         clearFood();
         food = getRandomCell();
-
         break;
       }
     }
   }
 
-  createBoard();
-  drawSnake();
-  drawFood();
+  function startGame() {
+    createBoard();
+    drawSnake();
+    drawFood();
+    document.addEventListener('keydown', handleKeyPress);
+    gameInterval = setInterval(() => {
+      move();
+      checkCollision();
+    }, 200);
+  }
 
-  document.addEventListener('keydown', handleKeyPress);
+  function stopGame() {
+    clearInterval(gameInterval);
+  }
 
-  setInterval(() => {
-    move();
-    checkCollision();
-  }, 200);
+  function clearBoard() {
+    cells.forEach(cell => cell.className = 'cell');
+  }
+
+  // Ajoutez un gestionnaire d'événements au bouton "Play"
+  const playButton = document.getElementById('play-button');
+  playButton.addEventListener('click', () => {
+    clearBoard();
+    startGame();
+  });
 });
