@@ -743,6 +743,7 @@ a:not([href]):hover{
   height: 40px;
   perspective: 1000px;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .card div {
@@ -758,13 +759,11 @@ a:not([href]):hover{
 }
 
 .card .card-front {
-  background-color: #ddd;
   background-image: url('./images/cube.png');
   background-size: cover;
 }
 
 .card .card-back {
-  background-color: #ddd;
   transform: rotateY(180deg);
   background-size: cover;
   background-repeat: no-repeat;
