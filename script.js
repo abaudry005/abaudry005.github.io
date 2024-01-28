@@ -138,13 +138,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridSize = 10;
   const board = document.getElementById('game-board');
   const cells = [];
-
-  let snake = [];
+  let snake = [{ x: 5, y: 5 }];
   let direction = 'right';
   let food = getRandomCell();
-  let gameInterval;
 
   const playButton = document.getElementById('play-button');
+  playButton.addEventListener('click', () => {
+    playButton.style.display = 'none';
+    initGame();
+  });
+
+  function initGame() {
+    resetGame();
+    drawSnake();
+    drawFood();
+    setInterval(() => {
+      move();
+      checkCollision();
+    }, 200);
+  }
+
+  function resetGame() {
+    snake = [{ x: 5, y: 5 }];
+    clearBoard();
+    createBoard();
+  }
+
+  function clearBoard() {
+    cells.forEach(cell => cell.classList.remove('snake', 'food'));
+  }
+
+  function clearFood() {
+    const index = food.x + food.y * gridSize;
+    cells[index].classList.remove('food');
+  }
 
   function createBoard() {
     for (let row = 0; row < gridSize; row++) {
@@ -207,9 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
       removeFood();
       food = getRandomCell();
     } else {
-      const tail = snake.pop();
-      const tailIndex = tail.x + tail.y * gridSize;
-      cells[tailIndex].classList.remove('snake');
+      snake.pop();
     }
 
     drawSnake();
@@ -233,62 +258,24 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
     }
   }
-  function clearFood() {
-    const index = food.x + food.y * gridSize;
-    cells[index].classList.remove('food');
-  }
-  
+
   function checkCollision() {
     const head = snake[0];
-  
+
     for (let i = 1; i < snake.length; i++) {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
-  
+
         // Réinitialiser le jeu
-        snake = [];
-        direction = 'right';
-        food = getRandomCell();
-  
-        // Effacer la nourriture
-        clearFood();
-  
-        // Arrêter l'intervalle de jeu
-        clearInterval(gameInterval);
-  
-        // Afficher le bouton Play
-        playButton.style.display = 'block';
-  
+        resetGame();
         break;
       }
     }
   }
 
-  function startGame() {
-    // Initialiser le serpent au centre du tableau
-    snake = [{ x: Math.floor(gridSize / 2), y: Math.floor(gridSize / 2) }];
-    drawSnake();
-    drawFood();
-
-    // Démarrer l'intervalle de jeu
-    gameInterval = setInterval(() => {
-      move();
-      checkCollision();
-    }, 200);
-  }
-
-  // Écouter le clic sur le bouton Play
-  playButton.addEventListener('click', () => {
-    // Cacher le bouton Play après le clic
-    playButton.style.display = 'none';
-
-    // Démarrer le jeu
-    startGame();
-  });
-
-  // Créer le tableau au chargement de la page
   createBoard();
+  drawSnake();
+  drawFood();
 
-  // Écouter les touches du clavier
   document.addEventListener('keydown', handleKeyPress);
 });
