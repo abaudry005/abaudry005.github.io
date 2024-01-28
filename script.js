@@ -240,21 +240,12 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 1; i < snake.length; i++) {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         alert('Game Over!');
-    
-        // Réinitialiser le jeu
         snake = [];
         direction = 'right';
         food = getRandomCell();
-    
-        // Effacer la nourriture de la partie précédente
         clearPreviousFood();
-    
-        // Arrêter l'intervalle de jeu
         clearInterval(gameInterval);
-    
-        // Afficher le bouton Play
         playButton.style.display = 'block';
-    
         break;
       }
     }
@@ -268,30 +259,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   function startGame() {
-    // Initialiser le serpent au centre du tableau
     snake = [{ x: Math.floor(gridSize / 2), y: Math.floor(gridSize / 2) }];
     drawSnake();
     drawFood();
 
-    // Démarrer l'intervalle de jeu
     gameInterval = setInterval(() => {
       move();
       checkCollision();
     }, 200);
   }
 
-  // Écouter le clic sur le bouton Play
   playButton.addEventListener('click', () => {
-    // Cacher le bouton Play après le clic
     playButton.style.display = 'none';
-
-    // Démarrer le jeu
     startGame();
   });
 
-  // Créer le tableau au chargement de la page
   createBoard();
-
-  // Écouter les touches du clavier
   document.addEventListener('keydown', handleKeyPress);
 });
