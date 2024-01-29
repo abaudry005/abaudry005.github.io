@@ -68,7 +68,7 @@ function myFunctionContact() {
 }
 
 function openFolder() {
-  document.getElementById("open_folder").style.display = "flex";
+  document.getElementById("open_folder").style.display = "block";
 }
 
 function closeFolder() {

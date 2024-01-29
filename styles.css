@@ -507,6 +507,24 @@ a:not([href]):hover{
   background-color: #333; /* Couleur de la croix au survol (gris foncé dans l'exemple) */
 }
 
+.pdf-container {
+  margin: 15px;
+  cursor: pointer;
+  width: 80px;
+  height: 100px;
+}
+
+.pdf-container img {
+  width: 80px;
+  height: 100px;
+}
+
+.pdf_title {
+  margin-top: 5px;
+  text-align: center;
+  color:#ddd;
+}
+
 /*---------------*/
 
 /*-----Experience------*/
