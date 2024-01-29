@@ -131,51 +131,6 @@ body {
   transform: translateX(40px) translateY(-50%);
 }
 
-
-
-/*-----Apple switch-----*/
-
-/* .switch-container {
-  align-self: center;
-  margin-left: auto;
-  padding-right: 20px;
-}
-
-.apple-switch {
-  display: none;
-}
-
-.apple-switch + label {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 40px;
-  background-color: #8364f2;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.apple-switch + label:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 4px;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-.apple-switch:checked + label {
-  background-color: #e3ad5e;
-}
-
-.apple-switch:checked + label:before {
-  transform: translateX(40px) translateY(-50%);
-} */
-
 /*----------------*/
 
 .intro-container{
@@ -480,6 +435,78 @@ a:not([href]):hover{
     text-decoration: none;
     transition: 1s;
 }
+
+/*-------Folder--------*/
+
+.folder{
+  background-image: url('images/file.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 100px;
+}
+
+.folder:hover{
+  filter: brightness(1.4);
+}
+
+.open_folder{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  background-color: rgba(64, 64, 64, 0.99);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+}
+
+.top_open_folder{
+  width: 100%;
+  height: 35px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.close_btn{
+  width: 15px;
+  height: 15px;
+  background-color: #f44336;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+}
+
+.close_btn::before,
+.close_btn::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 12px; /* Ajustez la hauteur selon vos besoins */
+  background-color: #f44336; /* Couleur de la croix (blanc dans l'exemple) */
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.close_btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close_btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close_btn:hover::before,
+.close_btn:hover::after {
+  background-color: #333; /* Couleur de la croix au survol (gris foncé dans l'exemple) */
+}
+
 /*---------------*/
 
 /*-----Experience------*/

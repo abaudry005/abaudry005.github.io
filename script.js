@@ -56,7 +56,7 @@ function myFunction() {
   }
 
 
-/*----Contact------*/
+/*----Display-contact-folder------*/
 
 function myFunctionContact() {
     if(document.getElementById("contact-hide").style.display === "flex"){
@@ -65,6 +65,14 @@ function myFunctionContact() {
     else{
         document.getElementById("contact-hide").style.display = "flex";
     }
+}
+
+function openFolder() {
+  document.getElementById("open_folder").style.display = "flex";
+}
+
+function closeFolder() {
+  document.getElementById("open_folder").style.display = "none";
 }
 
 /*------Memory_Game------*/
