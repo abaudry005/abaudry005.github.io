@@ -131,7 +131,31 @@ body {
   transform: translateX(40px) translateY(-50%);
 }
 
-/*----------------*/
+/*------Animation des div-------*/
+
+.hidden-div {
+  opacity: 0;
+  transform: translateY(20px); /* Déplacez la div vers le bas pour un effet de fondu enchaîné */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation aux div */
+.animated {
+  animation: fadeIn 1s ease forwards; /* Durée de l'animation et type d'interpolation */
+}
+
+/*------------------------------*/
 
 .intro-container{
     display: flex;
@@ -465,6 +489,7 @@ a:not([href]):hover{
 
 .folder:hover{
   filter: brightness(1.4);
+  cursor: pointer;
 }
 
 .open_folder{
@@ -478,6 +503,7 @@ a:not([href]):hover{
   border: 1px solid #ccc;
   border-radius: 10px;
   display: none;
+  z-index: 1;
 }
 
 .top_open_folder{
@@ -969,4 +995,74 @@ a:not([href]):hover{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+}
+/*-----Chat-box-----*/
+
+.chat-container{
+  position: fixed;
+  bottom: -200px;
+  right: 1%;
+  background-color:#593E67;
+  border-radius: 10px;
+  width: 300px;
+  transition: bottom 0.5s ease;
+}
+
+.chat-box-top{
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.chat-box-top:hover{
+  color: #3a3a3a;
+  background-color: white;
+}
+
+.chat-box-bot{
+  height: 200px;
+  overflow-y: auto;
+}
+
+.question{
+  text-align: center;
+  border: 1px solid #B85B56;
+  background-color: #B85B56;
+  border-radius: 20px;
+  margin: 20px;
+  align-self: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.question:hover{
+  background-color: #DE741C;
+  color: white;
+}
+
+.response{
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+}
+
+.back-button{
+  border-radius: 10px;
+  background-color: #DE741C;
+  border: 1px solid #DE741C;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-button:hover{
+  background-color: #B85B56;
+  border: 1px solid #B85B56;
+  color: white;
 }

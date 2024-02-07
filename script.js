@@ -219,7 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
     snake.unshift(head);
 
     if (head.x === food.x && head.y === food.y) {
-      // Si le serpent mange la nourriture
       removeFood();
       food = getRandomCell();
     } else {
@@ -293,3 +292,104 @@ document.addEventListener('DOMContentLoaded', () => {
   createBoard();
   document.addEventListener('keydown', handleKeyPress);
 });
+
+/*-----chat-bot-------*/
+var questionClicked = false;
+
+let chatbotOpen = false;
+
+function chatbot() {
+  const chatContainer = document.getElementById("chat-container");
+  if (!chatbotOpen) {
+    chatContainer.style.bottom = "-10px";
+    chatbotOpen = true;
+  } else {
+    chatContainer.style.bottom = "-200px";
+    chatbotOpen = false;
+  }
+}
+
+const questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    if (questionClicked) {
+      return;
+    }
+    const answer = question.dataset.answer;
+    questions.forEach(q => {
+      if (q !== question) {
+        q.style.display = 'none';
+      }
+    });
+
+    const responseClass = question.dataset.responseClass;
+
+    const response = document.createElement('div');
+    response.classList.add('response', responseClass);
+
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('response-text');
+    response.appendChild(textContainer);
+
+    // Insérez le conteneur de réponse après la question
+    question.parentNode.insertBefore(response, question.nextSibling);
+
+    // Fonction pour écrire le texte progressivement
+    function typeWriter(text, i) {
+      if (i < text.length) {
+        textContainer.textContent += text.charAt(i);
+        i++;
+        setTimeout(() => {
+          typeWriter(text, i);
+        }, 25); // Vitesse d'écriture (50 ms)
+      }
+    }
+
+    // Commencez l'écriture du texte progressivement
+    typeWriter(answer, 0);
+
+    const backButton = document.createElement('button');
+    backButton.textContent = 'Back';
+    backButton.classList.add('back-button');
+    backButton.addEventListener('click', () => {
+
+      questions.forEach(q => {
+        q.style.display = 'block';
+      });
+      response.remove();
+      backButton.remove();
+      questionClicked = false;
+    });
+
+    const container = document.createElement('div');
+    container.appendChild(response);
+    container.appendChild(backButton);
+
+    question.parentNode.insertBefore(container, question.nextSibling);
+
+    questionClicked = true;
+  });
+});
+
+/*------animation------*/
+
+function animateVisibleElements() {
+  var elements = document.querySelectorAll('.hidden-div');
+
+  elements.forEach(function(element) {
+    var rect = element.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var halfWindowHeight = windowHeight / 2;
+
+    if ((rect.top >= 0 && rect.top <= windowHeight) || (rect.bottom >= 0 && rect.bottom <= windowHeight)) {
+      element.classList.add('animated');
+    }
+  });
+}
+
+// Écouteur d'événement de défilement pour déclencher l'animation lorsque les div deviennent visibles
+window.addEventListener('scroll', animateVisibleElements);
+
+// Appel initial de la fonction pour vérifier les div déjà visibles lors du chargement de la page
+animateVisibleElements();
